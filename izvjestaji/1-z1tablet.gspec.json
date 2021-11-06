@@ -1,0 +1,628 @@
+{
+  "testId" : "1-z1tablet.gspec",
+  "name" : "z1Tablet.gspec",
+  "report" : {
+    "nodes" : [ {
+      "name" : "Simple check",
+      "status" : "info",
+      "nodes" : [ {
+        "name" : "check  z1Tablet.gspec --url http://localhost/nastavnik.html --size 799x768 --htmlreport izvjestaji",
+        "status" : "info",
+        "nodes" : [ {
+          "name" : "Check layout: z1Tablet.gspec included tags: ",
+          "status" : "info",
+          "time" : 1636238114531,
+          "sections" : [ {
+            "name" : "Width section",
+            "place" : {
+              "filePath" : "z1Tablet.gspec",
+              "lineNumber" : 9
+            },
+            "objects" : [ {
+              "name" : "meni",
+              "specs" : [ {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "z1Tablet.gspec",
+                  "lineNumber" : 11
+                },
+                "name" : "width 98 to 100 % of body/width",
+                "meta" : [ {
+                  "from" : {
+                    "object" : "meni",
+                    "edge" : "left"
+                  },
+                  "to" : {
+                    "object" : "meni",
+                    "edge" : "right"
+                  },
+                  "expectedDistance" : "98 to 100% [725 to 740px]",
+                  "realDistance" : "100% [740px]"
+                } ],
+                "highlight" : [ "meni" ]
+              } ]
+            }, {
+              "name" : "studenti",
+              "specs" : [ {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "z1Tablet.gspec",
+                  "lineNumber" : 13
+                },
+                "name" : "width 98 to 100 % of body/width",
+                "meta" : [ {
+                  "from" : {
+                    "object" : "studenti",
+                    "edge" : "left"
+                  },
+                  "to" : {
+                    "object" : "studenti",
+                    "edge" : "right"
+                  },
+                  "expectedDistance" : "98 to 100% [725 to 740px]",
+                  "realDistance" : "100% [740px]"
+                } ],
+                "highlight" : [ "studenti" ]
+              } ]
+            }, {
+              "name" : "grupe",
+              "specs" : [ {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "z1Tablet.gspec",
+                  "lineNumber" : 15
+                },
+                "name" : "width 98 to 100 % of body/width",
+                "meta" : [ {
+                  "from" : {
+                    "object" : "grupe",
+                    "edge" : "left"
+                  },
+                  "to" : {
+                    "object" : "grupe",
+                    "edge" : "right"
+                  },
+                  "expectedDistance" : "98 to 100% [725 to 740px]",
+                  "realDistance" : "100% [740px]"
+                } ],
+                "highlight" : [ "grupe" ]
+              } ]
+            } ]
+          }, {
+            "name" : "Inside section",
+            "place" : {
+              "filePath" : "z1Tablet.gspec",
+              "lineNumber" : 19
+            },
+            "objects" : [ {
+              "name" : "grupelnk",
+              "specs" : [ {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "z1Tablet.gspec",
+                  "lineNumber" : 21
+                },
+                "name" : "inside meni",
+                "meta" : [ ],
+                "highlight" : [ "grupelnk", "meni" ]
+              } ]
+            }, {
+              "name" : "vjezbelnk",
+              "specs" : [ {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "z1Tablet.gspec",
+                  "lineNumber" : 23
+                },
+                "name" : "inside meni",
+                "meta" : [ ],
+                "highlight" : [ "vjezbelnk", "meni" ]
+              } ]
+            } ]
+          }, {
+            "name" : "Left of section",
+            "place" : {
+              "filePath" : "z1Tablet.gspec",
+              "lineNumber" : 25
+            },
+            "objects" : [ {
+              "name" : "grupelnk",
+              "specs" : [ {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "z1Tablet.gspec",
+                  "lineNumber" : 27
+                },
+                "name" : "left-of vjezbelnk",
+                "meta" : [ {
+                  "from" : {
+                    "object" : "grupelnk",
+                    "edge" : "right"
+                  },
+                  "to" : {
+                    "object" : "vjezbelnk",
+                    "edge" : "left"
+                  },
+                  "expectedDistance" : ">= 0px",
+                  "realDistance" : "31px"
+                } ],
+                "highlight" : [ "grupelnk", "vjezbelnk" ]
+              } ]
+            } ]
+          }, {
+            "name" : "Right of section",
+            "place" : {
+              "filePath" : "z1Tablet.gspec",
+              "lineNumber" : 29
+            },
+            "objects" : [ {
+              "name" : "vjezbelnk",
+              "specs" : [ {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "z1Tablet.gspec",
+                  "lineNumber" : 31
+                },
+                "name" : "right-of grupelnk",
+                "meta" : [ {
+                  "from" : {
+                    "object" : "vjezbelnk",
+                    "edge" : "left"
+                  },
+                  "to" : {
+                    "object" : "grupelnk",
+                    "edge" : "right"
+                  },
+                  "expectedDistance" : ">= 0px",
+                  "realDistance" : "31px"
+                } ],
+                "highlight" : [ "vjezbelnk", "grupelnk" ]
+              } ]
+            } ]
+          }, {
+            "name" : "Above section",
+            "place" : {
+              "filePath" : "z1Tablet.gspec",
+              "lineNumber" : 33
+            },
+            "objects" : [ {
+              "name" : "meni",
+              "specs" : [ {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "z1Tablet.gspec",
+                  "lineNumber" : 35
+                },
+                "name" : "above studenti",
+                "meta" : [ {
+                  "from" : {
+                    "object" : "meni",
+                    "edge" : "bottom"
+                  },
+                  "to" : {
+                    "object" : "studenti",
+                    "edge" : "top"
+                  },
+                  "expectedDistance" : ">= 0px",
+                  "realDistance" : "0px"
+                } ],
+                "highlight" : [ "meni", "studenti" ]
+              }, {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "z1Tablet.gspec",
+                  "lineNumber" : 37
+                },
+                "name" : "above grupe",
+                "meta" : [ {
+                  "from" : {
+                    "object" : "meni",
+                    "edge" : "bottom"
+                  },
+                  "to" : {
+                    "object" : "grupe",
+                    "edge" : "top"
+                  },
+                  "expectedDistance" : ">= 0px",
+                  "realDistance" : "387px"
+                } ],
+                "highlight" : [ "meni", "grupe" ]
+              } ]
+            }, {
+              "name" : "grupelnk",
+              "specs" : [ {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "z1Tablet.gspec",
+                  "lineNumber" : 39
+                },
+                "name" : "above studenti",
+                "meta" : [ {
+                  "from" : {
+                    "object" : "grupelnk",
+                    "edge" : "bottom"
+                  },
+                  "to" : {
+                    "object" : "studenti",
+                    "edge" : "top"
+                  },
+                  "expectedDistance" : ">= 0px",
+                  "realDistance" : "17px"
+                } ],
+                "highlight" : [ "grupelnk", "studenti" ]
+              }, {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "z1Tablet.gspec",
+                  "lineNumber" : 41
+                },
+                "name" : "above grupe",
+                "meta" : [ {
+                  "from" : {
+                    "object" : "grupelnk",
+                    "edge" : "bottom"
+                  },
+                  "to" : {
+                    "object" : "grupe",
+                    "edge" : "top"
+                  },
+                  "expectedDistance" : ">= 0px",
+                  "realDistance" : "404px"
+                } ],
+                "highlight" : [ "grupelnk", "grupe" ]
+              } ]
+            }, {
+              "name" : "vjezbelnk",
+              "specs" : [ {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "z1Tablet.gspec",
+                  "lineNumber" : 43
+                },
+                "name" : "above studenti",
+                "meta" : [ {
+                  "from" : {
+                    "object" : "vjezbelnk",
+                    "edge" : "bottom"
+                  },
+                  "to" : {
+                    "object" : "studenti",
+                    "edge" : "top"
+                  },
+                  "expectedDistance" : ">= 0px",
+                  "realDistance" : "17px"
+                } ],
+                "highlight" : [ "vjezbelnk", "studenti" ]
+              }, {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "z1Tablet.gspec",
+                  "lineNumber" : 45
+                },
+                "name" : "above grupe",
+                "meta" : [ {
+                  "from" : {
+                    "object" : "vjezbelnk",
+                    "edge" : "bottom"
+                  },
+                  "to" : {
+                    "object" : "grupe",
+                    "edge" : "top"
+                  },
+                  "expectedDistance" : ">= 0px",
+                  "realDistance" : "404px"
+                } ],
+                "highlight" : [ "vjezbelnk", "grupe" ]
+              } ]
+            }, {
+              "name" : "studenti",
+              "specs" : [ {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "z1Tablet.gspec",
+                  "lineNumber" : 47
+                },
+                "name" : "above grupe",
+                "meta" : [ {
+                  "from" : {
+                    "object" : "studenti",
+                    "edge" : "bottom"
+                  },
+                  "to" : {
+                    "object" : "grupe",
+                    "edge" : "top"
+                  },
+                  "expectedDistance" : ">= 0px",
+                  "realDistance" : "1px"
+                } ],
+                "highlight" : [ "studenti", "grupe" ]
+              } ]
+            } ]
+          }, {
+            "name" : "Below section",
+            "place" : {
+              "filePath" : "z1Tablet.gspec",
+              "lineNumber" : 49
+            },
+            "objects" : [ {
+              "name" : "studenti",
+              "specs" : [ {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "z1Tablet.gspec",
+                  "lineNumber" : 51
+                },
+                "name" : "below meni",
+                "meta" : [ {
+                  "from" : {
+                    "object" : "studenti",
+                    "edge" : "top"
+                  },
+                  "to" : {
+                    "object" : "meni",
+                    "edge" : "bottom"
+                  },
+                  "expectedDistance" : ">= 0px",
+                  "realDistance" : "0px"
+                } ],
+                "highlight" : [ "studenti", "meni" ]
+              }, {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "z1Tablet.gspec",
+                  "lineNumber" : 55
+                },
+                "name" : "below grupelnk",
+                "meta" : [ {
+                  "from" : {
+                    "object" : "studenti",
+                    "edge" : "top"
+                  },
+                  "to" : {
+                    "object" : "grupelnk",
+                    "edge" : "bottom"
+                  },
+                  "expectedDistance" : ">= 0px",
+                  "realDistance" : "17px"
+                } ],
+                "highlight" : [ "studenti", "grupelnk" ]
+              }, {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "z1Tablet.gspec",
+                  "lineNumber" : 59
+                },
+                "name" : "below vjezbelnk",
+                "meta" : [ {
+                  "from" : {
+                    "object" : "studenti",
+                    "edge" : "top"
+                  },
+                  "to" : {
+                    "object" : "vjezbelnk",
+                    "edge" : "bottom"
+                  },
+                  "expectedDistance" : ">= 0px",
+                  "realDistance" : "17px"
+                } ],
+                "highlight" : [ "studenti", "vjezbelnk" ]
+              } ]
+            }, {
+              "name" : "grupe",
+              "specs" : [ {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "z1Tablet.gspec",
+                  "lineNumber" : 53
+                },
+                "name" : "below meni",
+                "meta" : [ {
+                  "from" : {
+                    "object" : "grupe",
+                    "edge" : "top"
+                  },
+                  "to" : {
+                    "object" : "meni",
+                    "edge" : "bottom"
+                  },
+                  "expectedDistance" : ">= 0px",
+                  "realDistance" : "387px"
+                } ],
+                "highlight" : [ "grupe", "meni" ]
+              }, {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "z1Tablet.gspec",
+                  "lineNumber" : 57
+                },
+                "name" : "below grupelnk",
+                "meta" : [ {
+                  "from" : {
+                    "object" : "grupe",
+                    "edge" : "top"
+                  },
+                  "to" : {
+                    "object" : "grupelnk",
+                    "edge" : "bottom"
+                  },
+                  "expectedDistance" : ">= 0px",
+                  "realDistance" : "404px"
+                } ],
+                "highlight" : [ "grupe", "grupelnk" ]
+              }, {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "z1Tablet.gspec",
+                  "lineNumber" : 61
+                },
+                "name" : "below vjezbelnk",
+                "meta" : [ {
+                  "from" : {
+                    "object" : "grupe",
+                    "edge" : "top"
+                  },
+                  "to" : {
+                    "object" : "vjezbelnk",
+                    "edge" : "bottom"
+                  },
+                  "expectedDistance" : ">= 0px",
+                  "realDistance" : "404px"
+                } ],
+                "highlight" : [ "grupe", "vjezbelnk" ]
+              }, {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "z1Tablet.gspec",
+                  "lineNumber" : 63
+                },
+                "name" : "below studenti",
+                "meta" : [ {
+                  "from" : {
+                    "object" : "grupe",
+                    "edge" : "top"
+                  },
+                  "to" : {
+                    "object" : "studenti",
+                    "edge" : "bottom"
+                  },
+                  "expectedDistance" : ">= 0px",
+                  "realDistance" : "1px"
+                } ],
+                "highlight" : [ "grupe", "studenti" ]
+              } ]
+            } ]
+          }, {
+            "name" : "Visible section",
+            "place" : {
+              "filePath" : "z1Tablet.gspec",
+              "lineNumber" : 64
+            },
+            "objects" : [ {
+              "name" : "meni",
+              "specs" : [ {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "z1Tablet.gspec",
+                  "lineNumber" : 66
+                },
+                "name" : "visible",
+                "highlight" : [ "meni" ]
+              } ]
+            }, {
+              "name" : "studenti",
+              "specs" : [ {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "z1Tablet.gspec",
+                  "lineNumber" : 68
+                },
+                "name" : "visible",
+                "highlight" : [ "studenti" ]
+              } ]
+            }, {
+              "name" : "grupe",
+              "specs" : [ {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "z1Tablet.gspec",
+                  "lineNumber" : 70
+                },
+                "name" : "visible",
+                "highlight" : [ "grupe" ]
+              } ]
+            }, {
+              "name" : "grupelnk",
+              "specs" : [ {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "z1Tablet.gspec",
+                  "lineNumber" : 72
+                },
+                "name" : "visible",
+                "highlight" : [ "grupelnk" ]
+              } ]
+            }, {
+              "name" : "vjezbelnk",
+              "specs" : [ {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "z1Tablet.gspec",
+                  "lineNumber" : 74
+                },
+                "name" : "visible",
+                "highlight" : [ "vjezbelnk" ]
+              } ]
+            } ]
+          }, {
+            "name" : "Inside partly section",
+            "place" : {
+              "filePath" : "z1Tablet.gspec",
+              "lineNumber" : 76
+            },
+            "objects" : [ {
+              "name" : "meni",
+              "specs" : [ {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "z1Tablet.gspec",
+                  "lineNumber" : 78
+                },
+                "name" : "inside partly body ~0px left, ~0px top",
+                "meta" : [ {
+                  "from" : {
+                    "object" : "meni",
+                    "edge" : "left"
+                  },
+                  "to" : {
+                    "object" : "body",
+                    "edge" : "left"
+                  },
+                  "expectedDistance" : "-2 to 2px",
+                  "realDistance" : "0px"
+                }, {
+                  "from" : {
+                    "object" : "meni",
+                    "edge" : "top"
+                  },
+                  "to" : {
+                    "object" : "body",
+                    "edge" : "top"
+                  },
+                  "expectedDistance" : "-2 to 2px",
+                  "realDistance" : "0px"
+                } ],
+                "highlight" : [ "meni", "body" ]
+              } ]
+            } ]
+          } ],
+          "objects" : {
+            "meni" : {
+              "area" : [ 0, 0, 740, 97 ]
+            },
+            "grupelnk" : {
+              "area" : [ 16, 62, 40, 18 ]
+            },
+            "body" : {
+              "area" : [ 0, 0, 740, 644 ]
+            },
+            "vjezbelnk" : {
+              "area" : [ 87, 62, 45, 18 ]
+            },
+            "grupe" : {
+              "area" : [ 0, 484, 740, 161 ]
+            },
+            "studenti" : {
+              "area" : [ 0, 97, 740, 386 ]
+            }
+          },
+          "screenshot" : "layout-1-screenshot.png",
+          "type" : "layout"
+        } ],
+        "time" : 1636238112806,
+        "type" : "node"
+      } ],
+      "time" : 1636238111873,
+      "type" : "node"
+    } ]
+  }
+}
