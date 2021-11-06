@@ -1,0 +1,57 @@
+
+h2{
+    margin: auto;
+    width: 50%;
+    background-color: #FF570A;
+    text-align: center;
+    border: 1px solid purple;
+    padding: 1em;
+}
+
+#forma{
+    margin: auto;
+    width: 50%;
+    height: 30vh;
+    grid-gap: 2px;
+    background-color: #FF570A;
+    display: grid;
+    grid-template-areas: 
+    'label url'
+    'label god'
+    'label branch'
+    'button button';
+    grid-template-rows: 23% 23% 23% 23%;
+    grid-template-columns: 30%;
+    border: 1px solid purple;
+}
+
+#forma > input{
+    border-radius: 10px;
+}
+
+#forma > label{
+    text-align: left;
+    font-weight: bold;
+}
+
+#forma > *{
+    margin: 10px;
+    margin-top: 20px;
+}
+
+#url{
+    grid-area: url;
+}
+
+#god{
+    grid-area: god;
+}
+
+#branch{
+    grid-area: branch;
+}
+
+#button{
+    grid-area: button;
+}
+
