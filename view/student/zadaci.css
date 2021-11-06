@@ -1,0 +1,89 @@
+.f1{
+    margin: auto;
+    width: 50%;
+    height: 30vh;
+    grid-gap: 2px;
+    background-color: #FF570A;
+    display: grid;
+    grid-template-areas: 
+    'label vjezba'
+    'label zadatak'
+    'label verzija'
+    'label komentar'
+    'b1 b1'
+    ;
+    grid-template-columns: 30%;
+    border: 1px solid purple;
+}
+
+#vjezba{
+    grid-area: vjezba;
+}
+
+#zadatak{
+    grid-area: zadatak;
+}
+
+#verzija{
+    grid-area: verzija;
+}
+
+#komentar{
+    grid-area: komentar;
+}
+
+#b1{
+    grid-area: b1;
+}
+
+.f2{
+    margin: auto;
+    width: 50%;
+    height: 30vh;
+    grid-gap: 2px;
+    background-color: #FF570A;
+    display: grid;
+    grid-template-areas: 
+    'label error'
+    'label bzgr'
+    'b2 b2'
+    ;
+    grid-template-rows: 70% 10%;
+    grid-template-columns: 30%;
+    border: 1px solid purple;
+}
+
+form > *{
+    margin: 0.5em;
+}
+
+#error{
+    grid-area: error;
+}
+
+#bzgr{
+    grid-area: bzgr;
+}
+
+#b2{
+    grid-area: b2;
+}
+
+h3{
+    margin: auto;
+    padding: 2em;
+    text-align: center;
+    background-color: #FF570A;
+    width: 50%;
+    border: 1px solid purple;
+
+}
+
+@media (min-width: 800px) {
+    body{
+        display: grid;
+        width: 100%;
+        grid-template-areas: 'div div';
+    }   
+}
+
