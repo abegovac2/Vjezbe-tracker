@@ -1,6 +1,7 @@
 body{
     width: 100%;
     height: 100vh;
+    background-color: purple;
 }
 
 body,html {
@@ -12,7 +13,7 @@ body,html {
 
 #meni{
     grid-area: meni;
-    background-color: yellow;
+    background-color: #FF570A;
 }
 
 .menu-options{
@@ -27,7 +28,7 @@ body,html {
 /*meni*/
 
 .graf{
-    background-color: chartreuse;
+    background-color: #D72638;
     border: 1px solid black;
 }
 
@@ -51,7 +52,7 @@ body,html {
 /*za vjezbe*/
 #odabirVjezbe{
     grid-area: odabirVjezbe;
-    background-color: blue;
+    background-color: #ffffff;
 }
 
 #odabirVjezbe > div{
@@ -65,6 +66,7 @@ body,html {
     width: 100%;
     display: inline-block;
     font-size: 1.5em;
+    
 }
 
 #odabirVjezbe > div > input {
@@ -76,14 +78,15 @@ body,html {
 }
 
 .zadaci{
-    background-color: hotpink;
+    background-color: #FFAB85;
+    border: 1px solid black;
     display: none;
 }
 
 .zadaci > div{
     width: auto;
     display: inline;
-    background-color: purple;
+    background-color: #FFD5C2;
     margin: 1em;
     font-size: 1.3em;
 }
