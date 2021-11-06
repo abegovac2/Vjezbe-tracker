@@ -11,7 +11,7 @@
         "nodes" : [ {
           "name" : "Check layout: z1Tablet.gspec included tags: ",
           "status" : "info",
-          "time" : 1636238114531,
+          "time" : 1636238327348,
           "sections" : [ {
             "name" : "Width section",
             "place" : {
@@ -618,10 +618,10 @@
           "screenshot" : "layout-1-screenshot.png",
           "type" : "layout"
         } ],
-        "time" : 1636238112806,
+        "time" : 1636238325649,
         "type" : "node"
       } ],
-      "time" : 1636238111873,
+      "time" : 1636238324726,
       "type" : "node"
     } ]
   }
