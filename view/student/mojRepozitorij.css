@@ -8,7 +8,7 @@ h2{
     padding: 1em;
 }
 
-#forma{
+.forma{
     margin: auto;
     width: 50%;
     height: 30vh;
@@ -23,6 +23,22 @@ h2{
     grid-template-rows: 23% 23% 23% 23%;
     grid-template-columns: 30%;
     border: 1px solid purple;
+}
+
+@media (max-width: 700px) {
+    .forma{
+        height: 50vh;
+        grid-template-areas: 
+        'l1'
+        'url'
+        'l2'
+        'god'
+        'l3'
+        'branch'
+        'button';
+        grid-template-rows: auto;
+        grid-template-columns: auto;
+    }
 }
 
 #forma > input{
