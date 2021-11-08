@@ -1,0 +1,584 @@
+{
+  "testId" : "1-z3desktop.gspec",
+  "name" : "z3Desktop.gspec",
+  "report" : {
+    "nodes" : [ {
+      "name" : "Simple check",
+      "status" : "info",
+      "nodes" : [ {
+        "name" : "check  z3Desktop.gspec --url http://localhost/mojRepozitorij.html --size 1024x768 --htmlreport izvjestaji",
+        "status" : "info",
+        "nodes" : [ {
+          "name" : "Check layout: z3Desktop.gspec included tags: ",
+          "status" : "info",
+          "time" : 1636328879173,
+          "sections" : [ {
+            "name" : "Width section",
+            "place" : {
+              "filePath" : "z3Desktop.gspec",
+              "lineNumber" : 12
+            },
+            "objects" : [ {
+              "name" : "forma",
+              "specs" : [ {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "z3Desktop.gspec",
+                  "lineNumber" : 14
+                },
+                "name" : "width 48 to 50 % of body/width",
+                "meta" : [ {
+                  "from" : {
+                    "object" : "forma",
+                    "edge" : "left"
+                  },
+                  "to" : {
+                    "object" : "forma",
+                    "edge" : "right"
+                  },
+                  "expectedDistance" : "48 to 50% [462 to 482px]",
+                  "realDistance" : "50% [484px]"
+                } ],
+                "highlight" : [ "forma" ]
+              } ]
+            }, {
+              "name" : "url",
+              "specs" : [ {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "z3Desktop.gspec",
+                  "lineNumber" : 16
+                },
+                "name" : "width 64 to 66 % of forma/width",
+                "meta" : [ {
+                  "from" : {
+                    "object" : "url",
+                    "edge" : "left"
+                  },
+                  "to" : {
+                    "object" : "url",
+                    "edge" : "right"
+                  },
+                  "expectedDistance" : "64 to 66% [309 to 319px]",
+                  "realDistance" : "65% [315px]"
+                } ],
+                "highlight" : [ "url" ]
+              } ]
+            }, {
+              "name" : "god",
+              "specs" : [ {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "z3Desktop.gspec",
+                  "lineNumber" : 18
+                },
+                "name" : "width 64 to 66 % of forma/width",
+                "meta" : [ {
+                  "from" : {
+                    "object" : "god",
+                    "edge" : "left"
+                  },
+                  "to" : {
+                    "object" : "god",
+                    "edge" : "right"
+                  },
+                  "expectedDistance" : "64 to 66% [309 to 319px]",
+                  "realDistance" : "65% [315px]"
+                } ],
+                "highlight" : [ "god" ]
+              } ]
+            }, {
+              "name" : "branch",
+              "specs" : [ {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "z3Desktop.gspec",
+                  "lineNumber" : 20
+                },
+                "name" : "width 64 to 66 % of forma/width",
+                "meta" : [ {
+                  "from" : {
+                    "object" : "branch",
+                    "edge" : "left"
+                  },
+                  "to" : {
+                    "object" : "branch",
+                    "edge" : "right"
+                  },
+                  "expectedDistance" : "64 to 66% [309 to 319px]",
+                  "realDistance" : "65% [315px]"
+                } ],
+                "highlight" : [ "branch" ]
+              } ]
+            }, {
+              "name" : "button",
+              "specs" : [ {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "z3Desktop.gspec",
+                  "lineNumber" : 22
+                },
+                "name" : "width 94 to 96 % of forma/width",
+                "meta" : [ {
+                  "from" : {
+                    "object" : "button",
+                    "edge" : "left"
+                  },
+                  "to" : {
+                    "object" : "button",
+                    "edge" : "right"
+                  },
+                  "expectedDistance" : "94 to 96% [454 to 464px]",
+                  "realDistance" : "95% [462px]"
+                } ],
+                "highlight" : [ "button" ]
+              } ]
+            } ]
+          }, {
+            "name" : "Inside section",
+            "place" : {
+              "filePath" : "z3Desktop.gspec",
+              "lineNumber" : 26
+            },
+            "objects" : [ {
+              "name" : "url",
+              "specs" : [ {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "z3Desktop.gspec",
+                  "lineNumber" : 28
+                },
+                "name" : "inside forma",
+                "meta" : [ ],
+                "highlight" : [ "url", "forma" ]
+              } ]
+            }, {
+              "name" : "god",
+              "specs" : [ {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "z3Desktop.gspec",
+                  "lineNumber" : 30
+                },
+                "name" : "inside forma",
+                "meta" : [ ],
+                "highlight" : [ "god", "forma" ]
+              } ]
+            }, {
+              "name" : "branch",
+              "specs" : [ {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "z3Desktop.gspec",
+                  "lineNumber" : 32
+                },
+                "name" : "inside forma",
+                "meta" : [ ],
+                "highlight" : [ "branch", "forma" ]
+              } ]
+            }, {
+              "name" : "button",
+              "specs" : [ {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "z3Desktop.gspec",
+                  "lineNumber" : 34
+                },
+                "name" : "inside forma",
+                "meta" : [ ],
+                "highlight" : [ "button", "forma" ]
+              } ]
+            } ]
+          }, {
+            "name" : "Left of section",
+            "place" : {
+              "filePath" : "z3Desktop.gspec",
+              "lineNumber" : 36
+            },
+            "objects" : [ {
+              "name" : "l1",
+              "specs" : [ {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "z3Desktop.gspec",
+                  "lineNumber" : 38
+                },
+                "name" : "left-of url",
+                "meta" : [ {
+                  "from" : {
+                    "object" : "l1",
+                    "edge" : "right"
+                  },
+                  "to" : {
+                    "object" : "url",
+                    "edge" : "left"
+                  },
+                  "expectedDistance" : ">= 0px",
+                  "realDistance" : "21px"
+                } ],
+                "highlight" : [ "l1", "url" ]
+              } ]
+            }, {
+              "name" : "l2",
+              "specs" : [ {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "z3Desktop.gspec",
+                  "lineNumber" : 40
+                },
+                "name" : "left-of god",
+                "meta" : [ {
+                  "from" : {
+                    "object" : "l2",
+                    "edge" : "right"
+                  },
+                  "to" : {
+                    "object" : "god",
+                    "edge" : "left"
+                  },
+                  "expectedDistance" : ">= 0px",
+                  "realDistance" : "21px"
+                } ],
+                "highlight" : [ "l2", "god" ]
+              } ]
+            }, {
+              "name" : "l3",
+              "specs" : [ {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "z3Desktop.gspec",
+                  "lineNumber" : 42
+                },
+                "name" : "left-of branch",
+                "meta" : [ {
+                  "from" : {
+                    "object" : "l3",
+                    "edge" : "right"
+                  },
+                  "to" : {
+                    "object" : "branch",
+                    "edge" : "left"
+                  },
+                  "expectedDistance" : ">= 0px",
+                  "realDistance" : "21px"
+                } ],
+                "highlight" : [ "l3", "branch" ]
+              } ]
+            } ]
+          }, {
+            "name" : "Right of section",
+            "place" : {
+              "filePath" : "z3Desktop.gspec",
+              "lineNumber" : 44
+            },
+            "objects" : [ {
+              "name" : "url",
+              "specs" : [ {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "z3Desktop.gspec",
+                  "lineNumber" : 46
+                },
+                "name" : "right-of l1",
+                "meta" : [ {
+                  "from" : {
+                    "object" : "url",
+                    "edge" : "left"
+                  },
+                  "to" : {
+                    "object" : "l1",
+                    "edge" : "right"
+                  },
+                  "expectedDistance" : ">= 0px",
+                  "realDistance" : "21px"
+                } ],
+                "highlight" : [ "url", "l1" ]
+              } ]
+            }, {
+              "name" : "god",
+              "specs" : [ {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "z3Desktop.gspec",
+                  "lineNumber" : 48
+                },
+                "name" : "right-of l2",
+                "meta" : [ {
+                  "from" : {
+                    "object" : "god",
+                    "edge" : "left"
+                  },
+                  "to" : {
+                    "object" : "l2",
+                    "edge" : "right"
+                  },
+                  "expectedDistance" : ">= 0px",
+                  "realDistance" : "21px"
+                } ],
+                "highlight" : [ "god", "l2" ]
+              } ]
+            }, {
+              "name" : "branch",
+              "specs" : [ {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "z3Desktop.gspec",
+                  "lineNumber" : 50
+                },
+                "name" : "right-of l3",
+                "meta" : [ {
+                  "from" : {
+                    "object" : "branch",
+                    "edge" : "left"
+                  },
+                  "to" : {
+                    "object" : "l3",
+                    "edge" : "right"
+                  },
+                  "expectedDistance" : ">= 0px",
+                  "realDistance" : "21px"
+                } ],
+                "highlight" : [ "branch", "l3" ]
+              } ]
+            } ]
+          }, {
+            "name" : "Above section",
+            "place" : {
+              "filePath" : "z3Desktop.gspec",
+              "lineNumber" : 52
+            },
+            "objects" : [ {
+              "name" : "url",
+              "specs" : [ {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "z3Desktop.gspec",
+                  "lineNumber" : 54
+                },
+                "name" : "above god",
+                "meta" : [ {
+                  "from" : {
+                    "object" : "url",
+                    "edge" : "bottom"
+                  },
+                  "to" : {
+                    "object" : "god",
+                    "edge" : "top"
+                  },
+                  "expectedDistance" : ">= 0px",
+                  "realDistance" : "32px"
+                } ],
+                "highlight" : [ "url", "god" ]
+              } ]
+            }, {
+              "name" : "god",
+              "specs" : [ {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "z3Desktop.gspec",
+                  "lineNumber" : 56
+                },
+                "name" : "above branch",
+                "meta" : [ {
+                  "from" : {
+                    "object" : "god",
+                    "edge" : "bottom"
+                  },
+                  "to" : {
+                    "object" : "branch",
+                    "edge" : "top"
+                  },
+                  "expectedDistance" : ">= 0px",
+                  "realDistance" : "31px"
+                } ],
+                "highlight" : [ "god", "branch" ]
+              } ]
+            }, {
+              "name" : "branch",
+              "specs" : [ {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "z3Desktop.gspec",
+                  "lineNumber" : 58
+                },
+                "name" : "above button",
+                "meta" : [ {
+                  "from" : {
+                    "object" : "branch",
+                    "edge" : "bottom"
+                  },
+                  "to" : {
+                    "object" : "button",
+                    "edge" : "top"
+                  },
+                  "expectedDistance" : ">= 0px",
+                  "realDistance" : "33px"
+                } ],
+                "highlight" : [ "branch", "button" ]
+              } ]
+            } ]
+          }, {
+            "name" : "Below section",
+            "place" : {
+              "filePath" : "z3Desktop.gspec",
+              "lineNumber" : 60
+            },
+            "objects" : [ {
+              "name" : "god",
+              "specs" : [ {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "z3Desktop.gspec",
+                  "lineNumber" : 62
+                },
+                "name" : "below url",
+                "meta" : [ {
+                  "from" : {
+                    "object" : "god",
+                    "edge" : "top"
+                  },
+                  "to" : {
+                    "object" : "url",
+                    "edge" : "bottom"
+                  },
+                  "expectedDistance" : ">= 0px",
+                  "realDistance" : "32px"
+                } ],
+                "highlight" : [ "god", "url" ]
+              } ]
+            }, {
+              "name" : "branch",
+              "specs" : [ {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "z3Desktop.gspec",
+                  "lineNumber" : 64
+                },
+                "name" : "below god",
+                "meta" : [ {
+                  "from" : {
+                    "object" : "branch",
+                    "edge" : "top"
+                  },
+                  "to" : {
+                    "object" : "god",
+                    "edge" : "bottom"
+                  },
+                  "expectedDistance" : ">= 0px",
+                  "realDistance" : "31px"
+                } ],
+                "highlight" : [ "branch", "god" ]
+              } ]
+            }, {
+              "name" : "button",
+              "specs" : [ {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "z3Desktop.gspec",
+                  "lineNumber" : 66
+                },
+                "name" : "below branch",
+                "meta" : [ {
+                  "from" : {
+                    "object" : "button",
+                    "edge" : "top"
+                  },
+                  "to" : {
+                    "object" : "branch",
+                    "edge" : "bottom"
+                  },
+                  "expectedDistance" : ">= 0px",
+                  "realDistance" : "33px"
+                } ],
+                "highlight" : [ "button", "branch" ]
+              } ]
+            } ]
+          }, {
+            "name" : "Visible section",
+            "place" : {
+              "filePath" : "z3Desktop.gspec",
+              "lineNumber" : 67
+            },
+            "objects" : [ {
+              "name" : "url",
+              "specs" : [ {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "z3Desktop.gspec",
+                  "lineNumber" : 69
+                },
+                "name" : "visible",
+                "highlight" : [ "url" ]
+              } ]
+            }, {
+              "name" : "god",
+              "specs" : [ {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "z3Desktop.gspec",
+                  "lineNumber" : 71
+                },
+                "name" : "visible",
+                "highlight" : [ "god" ]
+              } ]
+            }, {
+              "name" : "branch",
+              "specs" : [ {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "z3Desktop.gspec",
+                  "lineNumber" : 73
+                },
+                "name" : "visible",
+                "highlight" : [ "branch" ]
+              } ]
+            }, {
+              "name" : "button",
+              "specs" : [ {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "z3Desktop.gspec",
+                  "lineNumber" : 75
+                },
+                "name" : "visible",
+                "highlight" : [ "button" ]
+              } ]
+            } ]
+          } ],
+          "objects" : {
+            "button" : {
+              "area" : [ 259, 245, 462, 15 ]
+            },
+            "l1" : {
+              "area" : [ 259, 106, 125, 14 ]
+            },
+            "l2" : {
+              "area" : [ 259, 152, 125, 15 ]
+            },
+            "l3" : {
+              "area" : [ 259, 198, 125, 14 ]
+            },
+            "forma" : {
+              "area" : [ 248, 85, 484, 195 ]
+            },
+            "god" : {
+              "area" : [ 405, 152, 315, 15 ]
+            },
+            "branch" : {
+              "area" : [ 405, 198, 315, 14 ]
+            },
+            "url" : {
+              "area" : [ 405, 106, 315, 14 ]
+            }
+          },
+          "screenshot" : "layout-1-screenshot.png",
+          "type" : "layout"
+        } ],
+        "time" : 1636328877164,
+        "type" : "node"
+      } ],
+      "time" : 1636328875860,
+      "type" : "node"
+    } ]
+  }
+}

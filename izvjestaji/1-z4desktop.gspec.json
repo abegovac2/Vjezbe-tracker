@@ -1,0 +1,819 @@
+{
+  "testId" : "1-z4desktop.gspec",
+  "name" : "z4Desktop.gspec",
+  "report" : {
+    "nodes" : [ {
+      "name" : "Simple check",
+      "status" : "info",
+      "nodes" : [ {
+        "name" : "check  z4Desktop.gspec --url http://localhost/zadaci.html --size 1024x768 --htmlreport izvjestaji",
+        "status" : "info",
+        "nodes" : [ {
+          "name" : "Check layout: z4Desktop.gspec included tags: ",
+          "status" : "info",
+          "time" : 1636330977955,
+          "sections" : [ {
+            "name" : "Width section",
+            "place" : {
+              "filePath" : "z4Desktop.gspec",
+              "lineNumber" : 14
+            },
+            "objects" : [ {
+              "name" : "f1",
+              "specs" : [ {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "z4Desktop.gspec",
+                  "lineNumber" : 16
+                },
+                "name" : "width 24 to 26 % of body/width",
+                "meta" : [ {
+                  "from" : {
+                    "object" : "f1",
+                    "edge" : "left"
+                  },
+                  "to" : {
+                    "object" : "f1",
+                    "edge" : "right"
+                  },
+                  "expectedDistance" : "24 to 26% [235 to 254px]",
+                  "realDistance" : "25% [249px]"
+                } ],
+                "highlight" : [ "f1" ]
+              } ]
+            }, {
+              "name" : "f2",
+              "specs" : [ {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "z4Desktop.gspec",
+                  "lineNumber" : 18
+                },
+                "name" : "width 24 to 26 % of body/width",
+                "meta" : [ {
+                  "from" : {
+                    "object" : "f2",
+                    "edge" : "left"
+                  },
+                  "to" : {
+                    "object" : "f2",
+                    "edge" : "right"
+                  },
+                  "expectedDistance" : "24 to 26% [235 to 254px]",
+                  "realDistance" : "25% [245px]"
+                } ],
+                "highlight" : [ "f2" ]
+              } ]
+            }, {
+              "name" : "vj",
+              "specs" : [ {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "z4Desktop.gspec",
+                  "lineNumber" : 20
+                },
+                "name" : "width 62 to 64 % of f1/width",
+                "meta" : [ {
+                  "from" : {
+                    "object" : "vj",
+                    "edge" : "left"
+                  },
+                  "to" : {
+                    "object" : "vj",
+                    "edge" : "right"
+                  },
+                  "expectedDistance" : "62 to 64% [154 to 159px]",
+                  "realDistance" : "63% [158px]"
+                } ],
+                "highlight" : [ "vj" ]
+              } ]
+            }, {
+              "name" : "zz",
+              "specs" : [ {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "z4Desktop.gspec",
+                  "lineNumber" : 22
+                },
+                "name" : "width 62 to 64 % of f1/width",
+                "meta" : [ {
+                  "from" : {
+                    "object" : "zz",
+                    "edge" : "left"
+                  },
+                  "to" : {
+                    "object" : "zz",
+                    "edge" : "right"
+                  },
+                  "expectedDistance" : "62 to 64% [154 to 159px]",
+                  "realDistance" : "63% [158px]"
+                } ],
+                "highlight" : [ "zz" ]
+              } ]
+            }, {
+              "name" : "ver",
+              "specs" : [ {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "z4Desktop.gspec",
+                  "lineNumber" : 24
+                },
+                "name" : "width 62 to 64 % of f1/width",
+                "meta" : [ {
+                  "from" : {
+                    "object" : "ver",
+                    "edge" : "left"
+                  },
+                  "to" : {
+                    "object" : "ver",
+                    "edge" : "right"
+                  },
+                  "expectedDistance" : "62 to 64% [154 to 159px]",
+                  "realDistance" : "63% [158px]"
+                } ],
+                "highlight" : [ "ver" ]
+              } ]
+            }, {
+              "name" : "kom",
+              "specs" : [ {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "z4Desktop.gspec",
+                  "lineNumber" : 26
+                },
+                "name" : "width 62 to 64 % of f1/width",
+                "meta" : [ {
+                  "from" : {
+                    "object" : "kom",
+                    "edge" : "left"
+                  },
+                  "to" : {
+                    "object" : "kom",
+                    "edge" : "right"
+                  },
+                  "expectedDistance" : "62 to 64% [154 to 159px]",
+                  "realDistance" : "63% [158px]"
+                } ],
+                "highlight" : [ "kom" ]
+              } ]
+            }, {
+              "name" : "b1",
+              "specs" : [ {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "z4Desktop.gspec",
+                  "lineNumber" : 28
+                },
+                "name" : "width 92 to 94 % of f1/width",
+                "meta" : [ {
+                  "from" : {
+                    "object" : "b1",
+                    "edge" : "left"
+                  },
+                  "to" : {
+                    "object" : "b1",
+                    "edge" : "right"
+                  },
+                  "expectedDistance" : "92 to 94% [229 to 234px]",
+                  "realDistance" : "93% [234px]"
+                } ],
+                "highlight" : [ "b1" ]
+              } ]
+            }, {
+              "name" : "err",
+              "specs" : [ {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "z4Desktop.gspec",
+                  "lineNumber" : 30
+                },
+                "name" : "width 62 to 64 % of f2/width",
+                "meta" : [ {
+                  "from" : {
+                    "object" : "err",
+                    "edge" : "left"
+                  },
+                  "to" : {
+                    "object" : "err",
+                    "edge" : "right"
+                  },
+                  "expectedDistance" : "62 to 64% [151 to 156px]",
+                  "realDistance" : "63% [155px]"
+                } ],
+                "highlight" : [ "err" ]
+              } ]
+            }, {
+              "name" : "bzgr",
+              "specs" : [ {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "z4Desktop.gspec",
+                  "lineNumber" : 32
+                },
+                "name" : "width 3 to 6 % of f2/width",
+                "meta" : [ {
+                  "from" : {
+                    "object" : "bzgr",
+                    "edge" : "left"
+                  },
+                  "to" : {
+                    "object" : "bzgr",
+                    "edge" : "right"
+                  },
+                  "expectedDistance" : "3 to 6% [7 to 14px]",
+                  "realDistance" : "5% [13px]"
+                } ],
+                "highlight" : [ "bzgr" ]
+              } ]
+            }, {
+              "name" : "b2",
+              "specs" : [ {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "z4Desktop.gspec",
+                  "lineNumber" : 34
+                },
+                "name" : "width 92 to 94 % of f2/width",
+                "meta" : [ {
+                  "from" : {
+                    "object" : "b2",
+                    "edge" : "left"
+                  },
+                  "to" : {
+                    "object" : "b2",
+                    "edge" : "right"
+                  },
+                  "expectedDistance" : "92 to 94% [225 to 230px]",
+                  "realDistance" : "93% [229px]"
+                } ],
+                "highlight" : [ "b2" ]
+              } ]
+            } ]
+          }, {
+            "name" : "Inside section",
+            "place" : {
+              "filePath" : "z4Desktop.gspec",
+              "lineNumber" : 38
+            },
+            "objects" : [ {
+              "name" : "vj",
+              "specs" : [ {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "z4Desktop.gspec",
+                  "lineNumber" : 40
+                },
+                "name" : "inside f1",
+                "meta" : [ ],
+                "highlight" : [ "vj", "f1" ]
+              } ]
+            }, {
+              "name" : "zz",
+              "specs" : [ {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "z4Desktop.gspec",
+                  "lineNumber" : 42
+                },
+                "name" : "inside f1",
+                "meta" : [ ],
+                "highlight" : [ "zz", "f1" ]
+              } ]
+            }, {
+              "name" : "ver",
+              "specs" : [ {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "z4Desktop.gspec",
+                  "lineNumber" : 44
+                },
+                "name" : "inside f1",
+                "meta" : [ ],
+                "highlight" : [ "ver", "f1" ]
+              } ]
+            }, {
+              "name" : "kom",
+              "specs" : [ {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "z4Desktop.gspec",
+                  "lineNumber" : 46
+                },
+                "name" : "inside f1",
+                "meta" : [ ],
+                "highlight" : [ "kom", "f1" ]
+              } ]
+            }, {
+              "name" : "b1",
+              "specs" : [ {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "z4Desktop.gspec",
+                  "lineNumber" : 48
+                },
+                "name" : "inside f1",
+                "meta" : [ ],
+                "highlight" : [ "b1", "f1" ]
+              } ]
+            }, {
+              "name" : "err",
+              "specs" : [ {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "z4Desktop.gspec",
+                  "lineNumber" : 50
+                },
+                "name" : "inside f2",
+                "meta" : [ ],
+                "highlight" : [ "err", "f2" ]
+              } ]
+            }, {
+              "name" : "bzgr",
+              "specs" : [ {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "z4Desktop.gspec",
+                  "lineNumber" : 52
+                },
+                "name" : "inside f2",
+                "meta" : [ ],
+                "highlight" : [ "bzgr", "f2" ]
+              } ]
+            }, {
+              "name" : "b2",
+              "specs" : [ {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "z4Desktop.gspec",
+                  "lineNumber" : 54
+                },
+                "name" : "inside f2",
+                "meta" : [ ],
+                "highlight" : [ "b2", "f2" ]
+              } ]
+            } ]
+          }, {
+            "name" : "Left of section",
+            "place" : {
+              "filePath" : "z4Desktop.gspec",
+              "lineNumber" : 55
+            },
+            "objects" : [ {
+              "name" : "f1",
+              "specs" : [ {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "z4Desktop.gspec",
+                  "lineNumber" : 57
+                },
+                "name" : "left-of f2",
+                "meta" : [ {
+                  "from" : {
+                    "object" : "f1",
+                    "edge" : "right"
+                  },
+                  "to" : {
+                    "object" : "f2",
+                    "edge" : "left"
+                  },
+                  "expectedDistance" : ">= 0px",
+                  "realDistance" : "244px"
+                } ],
+                "highlight" : [ "f1", "f2" ]
+              } ]
+            } ]
+          }, {
+            "name" : "Right of section",
+            "place" : {
+              "filePath" : "z4Desktop.gspec",
+              "lineNumber" : 59
+            },
+            "objects" : [ {
+              "name" : "f2",
+              "specs" : [ {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "z4Desktop.gspec",
+                  "lineNumber" : 61
+                },
+                "name" : "right-of f1",
+                "meta" : [ {
+                  "from" : {
+                    "object" : "f2",
+                    "edge" : "left"
+                  },
+                  "to" : {
+                    "object" : "f1",
+                    "edge" : "right"
+                  },
+                  "expectedDistance" : ">= 0px",
+                  "realDistance" : "244px"
+                } ],
+                "highlight" : [ "f2", "f1" ]
+              } ]
+            } ]
+          }, {
+            "name" : "Above section",
+            "place" : {
+              "filePath" : "z4Desktop.gspec",
+              "lineNumber" : 63
+            },
+            "objects" : [ {
+              "name" : "vj",
+              "specs" : [ {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "z4Desktop.gspec",
+                  "lineNumber" : 65
+                },
+                "name" : "above zz",
+                "meta" : [ {
+                  "from" : {
+                    "object" : "vj",
+                    "edge" : "bottom"
+                  },
+                  "to" : {
+                    "object" : "zz",
+                    "edge" : "top"
+                  },
+                  "expectedDistance" : ">= 0px",
+                  "realDistance" : "16px"
+                } ],
+                "highlight" : [ "vj", "zz" ]
+              } ]
+            }, {
+              "name" : "zz",
+              "specs" : [ {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "z4Desktop.gspec",
+                  "lineNumber" : 67
+                },
+                "name" : "above ver",
+                "meta" : [ {
+                  "from" : {
+                    "object" : "zz",
+                    "edge" : "bottom"
+                  },
+                  "to" : {
+                    "object" : "ver",
+                    "edge" : "top"
+                  },
+                  "expectedDistance" : ">= 0px",
+                  "realDistance" : "16px"
+                } ],
+                "highlight" : [ "zz", "ver" ]
+              } ]
+            }, {
+              "name" : "kom",
+              "specs" : [ {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "z4Desktop.gspec",
+                  "lineNumber" : 69
+                },
+                "name" : "above b1",
+                "meta" : [ {
+                  "from" : {
+                    "object" : "kom",
+                    "edge" : "bottom"
+                  },
+                  "to" : {
+                    "object" : "b1",
+                    "edge" : "top"
+                  },
+                  "expectedDistance" : ">= 0px",
+                  "realDistance" : "15px"
+                } ],
+                "highlight" : [ "kom", "b1" ]
+              } ]
+            }, {
+              "name" : "err",
+              "specs" : [ {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "z4Desktop.gspec",
+                  "lineNumber" : 71
+                },
+                "name" : "above bzgr",
+                "meta" : [ {
+                  "from" : {
+                    "object" : "err",
+                    "edge" : "bottom"
+                  },
+                  "to" : {
+                    "object" : "bzgr",
+                    "edge" : "top"
+                  },
+                  "expectedDistance" : ">= 0px",
+                  "realDistance" : "15px"
+                } ],
+                "highlight" : [ "err", "bzgr" ]
+              } ]
+            }, {
+              "name" : "bzgr",
+              "specs" : [ {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "z4Desktop.gspec",
+                  "lineNumber" : 73
+                },
+                "name" : "above b2",
+                "meta" : [ {
+                  "from" : {
+                    "object" : "bzgr",
+                    "edge" : "bottom"
+                  },
+                  "to" : {
+                    "object" : "b2",
+                    "edge" : "top"
+                  },
+                  "expectedDistance" : ">= 0px",
+                  "realDistance" : "9px"
+                } ],
+                "highlight" : [ "bzgr", "b2" ]
+              } ]
+            } ]
+          }, {
+            "name" : "Below section",
+            "place" : {
+              "filePath" : "z4Desktop.gspec",
+              "lineNumber" : 75
+            },
+            "objects" : [ {
+              "name" : "zz",
+              "specs" : [ {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "z4Desktop.gspec",
+                  "lineNumber" : 77
+                },
+                "name" : "below vj",
+                "meta" : [ {
+                  "from" : {
+                    "object" : "zz",
+                    "edge" : "top"
+                  },
+                  "to" : {
+                    "object" : "vj",
+                    "edge" : "bottom"
+                  },
+                  "expectedDistance" : ">= 0px",
+                  "realDistance" : "16px"
+                } ],
+                "highlight" : [ "zz", "vj" ]
+              } ]
+            }, {
+              "name" : "ver",
+              "specs" : [ {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "z4Desktop.gspec",
+                  "lineNumber" : 79
+                },
+                "name" : "below zz",
+                "meta" : [ {
+                  "from" : {
+                    "object" : "ver",
+                    "edge" : "top"
+                  },
+                  "to" : {
+                    "object" : "zz",
+                    "edge" : "bottom"
+                  },
+                  "expectedDistance" : ">= 0px",
+                  "realDistance" : "16px"
+                } ],
+                "highlight" : [ "ver", "zz" ]
+              } ]
+            }, {
+              "name" : "b1",
+              "specs" : [ {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "z4Desktop.gspec",
+                  "lineNumber" : 81
+                },
+                "name" : "below ver",
+                "meta" : [ {
+                  "from" : {
+                    "object" : "b1",
+                    "edge" : "top"
+                  },
+                  "to" : {
+                    "object" : "ver",
+                    "edge" : "bottom"
+                  },
+                  "expectedDistance" : ">= 0px",
+                  "realDistance" : "69px"
+                } ],
+                "highlight" : [ "b1", "ver" ]
+              } ]
+            }, {
+              "name" : "bzgr",
+              "specs" : [ {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "z4Desktop.gspec",
+                  "lineNumber" : 83
+                },
+                "name" : "below err",
+                "meta" : [ {
+                  "from" : {
+                    "object" : "bzgr",
+                    "edge" : "top"
+                  },
+                  "to" : {
+                    "object" : "err",
+                    "edge" : "bottom"
+                  },
+                  "expectedDistance" : ">= 0px",
+                  "realDistance" : "15px"
+                } ],
+                "highlight" : [ "bzgr", "err" ]
+              } ]
+            }, {
+              "name" : "b2",
+              "specs" : [ {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "z4Desktop.gspec",
+                  "lineNumber" : 85
+                },
+                "name" : "below bzgr",
+                "meta" : [ {
+                  "from" : {
+                    "object" : "b2",
+                    "edge" : "top"
+                  },
+                  "to" : {
+                    "object" : "bzgr",
+                    "edge" : "bottom"
+                  },
+                  "expectedDistance" : ">= 0px",
+                  "realDistance" : "9px"
+                } ],
+                "highlight" : [ "b2", "bzgr" ]
+              } ]
+            } ]
+          }, {
+            "name" : "Visible section",
+            "place" : {
+              "filePath" : "z4Desktop.gspec",
+              "lineNumber" : 86
+            },
+            "objects" : [ {
+              "name" : "f1",
+              "specs" : [ {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "z4Desktop.gspec",
+                  "lineNumber" : 88
+                },
+                "name" : "visible",
+                "highlight" : [ "f1" ]
+              } ]
+            }, {
+              "name" : "f2",
+              "specs" : [ {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "z4Desktop.gspec",
+                  "lineNumber" : 90
+                },
+                "name" : "visible",
+                "highlight" : [ "f2" ]
+              } ]
+            }, {
+              "name" : "vj",
+              "specs" : [ {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "z4Desktop.gspec",
+                  "lineNumber" : 92
+                },
+                "name" : "visible",
+                "highlight" : [ "vj" ]
+              } ]
+            }, {
+              "name" : "zz",
+              "specs" : [ {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "z4Desktop.gspec",
+                  "lineNumber" : 94
+                },
+                "name" : "visible",
+                "highlight" : [ "zz" ]
+              } ]
+            }, {
+              "name" : "ver",
+              "specs" : [ {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "z4Desktop.gspec",
+                  "lineNumber" : 96
+                },
+                "name" : "visible",
+                "highlight" : [ "ver" ]
+              } ]
+            }, {
+              "name" : "kom",
+              "specs" : [ {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "z4Desktop.gspec",
+                  "lineNumber" : 98
+                },
+                "name" : "visible",
+                "highlight" : [ "kom" ]
+              } ]
+            }, {
+              "name" : "b1",
+              "specs" : [ {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "z4Desktop.gspec",
+                  "lineNumber" : 100
+                },
+                "name" : "visible",
+                "highlight" : [ "b1" ]
+              } ]
+            }, {
+              "name" : "err",
+              "specs" : [ {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "z4Desktop.gspec",
+                  "lineNumber" : 102
+                },
+                "name" : "visible",
+                "highlight" : [ "err" ]
+              } ]
+            }, {
+              "name" : "bzgr",
+              "specs" : [ {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "z4Desktop.gspec",
+                  "lineNumber" : 104
+                },
+                "name" : "visible",
+                "highlight" : [ "bzgr" ]
+              } ]
+            }, {
+              "name" : "b2",
+              "specs" : [ {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "z4Desktop.gspec",
+                  "lineNumber" : 106
+                },
+                "name" : "visible",
+                "highlight" : [ "b2" ]
+              } ]
+            } ]
+          } ],
+          "objects" : {
+            "zz" : {
+              "area" : [ 214, 170, 158, 40 ]
+            },
+            "b2" : {
+              "area" : [ 631, 273, 229, 22 ]
+            },
+            "ver" : {
+              "area" : [ 214, 226, 158, 40 ]
+            },
+            "vj" : {
+              "area" : [ 214, 114, 158, 40 ]
+            },
+            "err" : {
+              "area" : [ 705, 114, 155, 122 ]
+            },
+            "kom" : {
+              "area" : [ 214, 282, 158, 38 ]
+            },
+            "f1" : {
+              "area" : [ 130, 106, 249, 259 ]
+            },
+            "f2" : {
+              "area" : [ 623, 106, 245, 195 ]
+            },
+            "bzgr" : {
+              "area" : [ 705, 251, 13, 13 ]
+            },
+            "b1" : {
+              "area" : [ 138, 335, 234, 23 ]
+            }
+          },
+          "screenshot" : "layout-1-screenshot.png",
+          "type" : "layout"
+        } ],
+        "time" : 1636330975188,
+        "type" : "node"
+      } ],
+      "time" : 1636330973880,
+      "type" : "node"
+    } ]
+  }
+}

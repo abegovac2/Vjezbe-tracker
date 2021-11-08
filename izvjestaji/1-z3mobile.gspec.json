@@ -1,0 +1,570 @@
+{
+  "testId" : "1-z3mobile.gspec",
+  "name" : "z3Mobile.gspec",
+  "report" : {
+    "nodes" : [ {
+      "name" : "Simple check",
+      "status" : "info",
+      "nodes" : [ {
+        "name" : "check  z3Mobile.gspec --url http://localhost/mojRepozitorij.html --size 699x768 --htmlreport izvjestaji",
+        "status" : "info",
+        "nodes" : [ {
+          "name" : "Check layout: z3Mobile.gspec included tags: ",
+          "status" : "info",
+          "time" : 1636329864248,
+          "sections" : [ {
+            "name" : "Width section",
+            "place" : {
+              "filePath" : "z3Mobile.gspec",
+              "lineNumber" : 12
+            },
+            "objects" : [ {
+              "name" : "forma",
+              "specs" : [ {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "z3Mobile.gspec",
+                  "lineNumber" : 14
+                },
+                "name" : "width 48 to 50 % of body/width",
+                "meta" : [ {
+                  "from" : {
+                    "object" : "forma",
+                    "edge" : "left"
+                  },
+                  "to" : {
+                    "object" : "forma",
+                    "edge" : "right"
+                  },
+                  "expectedDistance" : "48 to 50% [306 to 319px]",
+                  "realDistance" : "50% [321px]"
+                } ],
+                "highlight" : [ "forma" ]
+              } ]
+            }, {
+              "name" : "url",
+              "specs" : [ {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "z3Mobile.gspec",
+                  "lineNumber" : 16
+                },
+                "name" : "width 93 to 95 % of forma/width",
+                "meta" : [ {
+                  "from" : {
+                    "object" : "url",
+                    "edge" : "left"
+                  },
+                  "to" : {
+                    "object" : "url",
+                    "edge" : "right"
+                  },
+                  "expectedDistance" : "93 to 95% [298 to 304px]",
+                  "realDistance" : "93% [300px]"
+                } ],
+                "highlight" : [ "url" ]
+              } ]
+            }, {
+              "name" : "god",
+              "specs" : [ {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "z3Mobile.gspec",
+                  "lineNumber" : 18
+                },
+                "name" : "width 93 to 95 % of forma/width",
+                "meta" : [ {
+                  "from" : {
+                    "object" : "god",
+                    "edge" : "left"
+                  },
+                  "to" : {
+                    "object" : "god",
+                    "edge" : "right"
+                  },
+                  "expectedDistance" : "93 to 95% [298 to 304px]",
+                  "realDistance" : "93% [300px]"
+                } ],
+                "highlight" : [ "god" ]
+              } ]
+            }, {
+              "name" : "branch",
+              "specs" : [ {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "z3Mobile.gspec",
+                  "lineNumber" : 20
+                },
+                "name" : "width 93 to 95 % of forma/width",
+                "meta" : [ {
+                  "from" : {
+                    "object" : "branch",
+                    "edge" : "left"
+                  },
+                  "to" : {
+                    "object" : "branch",
+                    "edge" : "right"
+                  },
+                  "expectedDistance" : "93 to 95% [298 to 304px]",
+                  "realDistance" : "93% [300px]"
+                } ],
+                "highlight" : [ "branch" ]
+              } ]
+            }, {
+              "name" : "button",
+              "specs" : [ {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "z3Mobile.gspec",
+                  "lineNumber" : 22
+                },
+                "name" : "width 93 to 95 % of forma/width",
+                "meta" : [ {
+                  "from" : {
+                    "object" : "button",
+                    "edge" : "left"
+                  },
+                  "to" : {
+                    "object" : "button",
+                    "edge" : "right"
+                  },
+                  "expectedDistance" : "93 to 95% [298 to 304px]",
+                  "realDistance" : "93% [300px]"
+                } ],
+                "highlight" : [ "button" ]
+              } ]
+            } ]
+          }, {
+            "name" : "Inside section",
+            "place" : {
+              "filePath" : "z3Mobile.gspec",
+              "lineNumber" : 26
+            },
+            "objects" : [ {
+              "name" : "url",
+              "specs" : [ {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "z3Mobile.gspec",
+                  "lineNumber" : 28
+                },
+                "name" : "inside forma",
+                "meta" : [ ],
+                "highlight" : [ "url", "forma" ]
+              } ]
+            }, {
+              "name" : "god",
+              "specs" : [ {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "z3Mobile.gspec",
+                  "lineNumber" : 30
+                },
+                "name" : "inside forma",
+                "meta" : [ ],
+                "highlight" : [ "god", "forma" ]
+              } ]
+            }, {
+              "name" : "branch",
+              "specs" : [ {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "z3Mobile.gspec",
+                  "lineNumber" : 32
+                },
+                "name" : "inside forma",
+                "meta" : [ ],
+                "highlight" : [ "branch", "forma" ]
+              } ]
+            }, {
+              "name" : "button",
+              "specs" : [ {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "z3Mobile.gspec",
+                  "lineNumber" : 34
+                },
+                "name" : "inside forma",
+                "meta" : [ ],
+                "highlight" : [ "button", "forma" ]
+              } ]
+            } ]
+          }, {
+            "name" : "Above section",
+            "place" : {
+              "filePath" : "z3Mobile.gspec",
+              "lineNumber" : 40
+            },
+            "objects" : [ {
+              "name" : "l1",
+              "specs" : [ {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "z3Mobile.gspec",
+                  "lineNumber" : 42
+                },
+                "name" : "above url",
+                "meta" : [ {
+                  "from" : {
+                    "object" : "l1",
+                    "edge" : "bottom"
+                  },
+                  "to" : {
+                    "object" : "url",
+                    "edge" : "top"
+                  },
+                  "expectedDistance" : ">= 0px",
+                  "realDistance" : "31px"
+                } ],
+                "highlight" : [ "l1", "url" ]
+              } ]
+            }, {
+              "name" : "url",
+              "specs" : [ {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "z3Mobile.gspec",
+                  "lineNumber" : 44
+                },
+                "name" : "above l2",
+                "meta" : [ {
+                  "from" : {
+                    "object" : "url",
+                    "edge" : "bottom"
+                  },
+                  "to" : {
+                    "object" : "l2",
+                    "edge" : "top"
+                  },
+                  "expectedDistance" : ">= 0px",
+                  "realDistance" : "32px"
+                } ],
+                "highlight" : [ "url", "l2" ]
+              } ]
+            }, {
+              "name" : "l2",
+              "specs" : [ {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "z3Mobile.gspec",
+                  "lineNumber" : 46
+                },
+                "name" : "above god",
+                "meta" : [ {
+                  "from" : {
+                    "object" : "l2",
+                    "edge" : "bottom"
+                  },
+                  "to" : {
+                    "object" : "god",
+                    "edge" : "top"
+                  },
+                  "expectedDistance" : ">= 0px",
+                  "realDistance" : "33px"
+                } ],
+                "highlight" : [ "l2", "god" ]
+              } ]
+            }, {
+              "name" : "god",
+              "specs" : [ {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "z3Mobile.gspec",
+                  "lineNumber" : 48
+                },
+                "name" : "above l3",
+                "meta" : [ {
+                  "from" : {
+                    "object" : "god",
+                    "edge" : "bottom"
+                  },
+                  "to" : {
+                    "object" : "l3",
+                    "edge" : "top"
+                  },
+                  "expectedDistance" : ">= 0px",
+                  "realDistance" : "32px"
+                } ],
+                "highlight" : [ "god", "l3" ]
+              } ]
+            }, {
+              "name" : "l3",
+              "specs" : [ {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "z3Mobile.gspec",
+                  "lineNumber" : 50
+                },
+                "name" : "above branch",
+                "meta" : [ {
+                  "from" : {
+                    "object" : "l3",
+                    "edge" : "bottom"
+                  },
+                  "to" : {
+                    "object" : "branch",
+                    "edge" : "top"
+                  },
+                  "expectedDistance" : ">= 0px",
+                  "realDistance" : "31px"
+                } ],
+                "highlight" : [ "l3", "branch" ]
+              } ]
+            }, {
+              "name" : "branch",
+              "specs" : [ {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "z3Mobile.gspec",
+                  "lineNumber" : 52
+                },
+                "name" : "above button",
+                "meta" : [ {
+                  "from" : {
+                    "object" : "branch",
+                    "edge" : "bottom"
+                  },
+                  "to" : {
+                    "object" : "button",
+                    "edge" : "top"
+                  },
+                  "expectedDistance" : ">= 0px",
+                  "realDistance" : "32px"
+                } ],
+                "highlight" : [ "branch", "button" ]
+              } ]
+            } ]
+          }, {
+            "name" : "Below section",
+            "place" : {
+              "filePath" : "z3Mobile.gspec",
+              "lineNumber" : 54
+            },
+            "objects" : [ {
+              "name" : "url",
+              "specs" : [ {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "z3Mobile.gspec",
+                  "lineNumber" : 56
+                },
+                "name" : "below l1",
+                "meta" : [ {
+                  "from" : {
+                    "object" : "url",
+                    "edge" : "top"
+                  },
+                  "to" : {
+                    "object" : "l1",
+                    "edge" : "bottom"
+                  },
+                  "expectedDistance" : ">= 0px",
+                  "realDistance" : "31px"
+                } ],
+                "highlight" : [ "url", "l1" ]
+              } ]
+            }, {
+              "name" : "l2",
+              "specs" : [ {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "z3Mobile.gspec",
+                  "lineNumber" : 58
+                },
+                "name" : "below url",
+                "meta" : [ {
+                  "from" : {
+                    "object" : "l2",
+                    "edge" : "top"
+                  },
+                  "to" : {
+                    "object" : "url",
+                    "edge" : "bottom"
+                  },
+                  "expectedDistance" : ">= 0px",
+                  "realDistance" : "32px"
+                } ],
+                "highlight" : [ "l2", "url" ]
+              } ]
+            }, {
+              "name" : "god",
+              "specs" : [ {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "z3Mobile.gspec",
+                  "lineNumber" : 60
+                },
+                "name" : "below l2",
+                "meta" : [ {
+                  "from" : {
+                    "object" : "god",
+                    "edge" : "top"
+                  },
+                  "to" : {
+                    "object" : "l2",
+                    "edge" : "bottom"
+                  },
+                  "expectedDistance" : ">= 0px",
+                  "realDistance" : "33px"
+                } ],
+                "highlight" : [ "god", "l2" ]
+              } ]
+            }, {
+              "name" : "l3",
+              "specs" : [ {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "z3Mobile.gspec",
+                  "lineNumber" : 62
+                },
+                "name" : "below god",
+                "meta" : [ {
+                  "from" : {
+                    "object" : "l3",
+                    "edge" : "top"
+                  },
+                  "to" : {
+                    "object" : "god",
+                    "edge" : "bottom"
+                  },
+                  "expectedDistance" : ">= 0px",
+                  "realDistance" : "32px"
+                } ],
+                "highlight" : [ "l3", "god" ]
+              } ]
+            }, {
+              "name" : "branch",
+              "specs" : [ {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "z3Mobile.gspec",
+                  "lineNumber" : 64
+                },
+                "name" : "below l3",
+                "meta" : [ {
+                  "from" : {
+                    "object" : "branch",
+                    "edge" : "top"
+                  },
+                  "to" : {
+                    "object" : "l3",
+                    "edge" : "bottom"
+                  },
+                  "expectedDistance" : ">= 0px",
+                  "realDistance" : "31px"
+                } ],
+                "highlight" : [ "branch", "l3" ]
+              } ]
+            }, {
+              "name" : "button",
+              "specs" : [ {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "z3Mobile.gspec",
+                  "lineNumber" : 66
+                },
+                "name" : "below branch",
+                "meta" : [ {
+                  "from" : {
+                    "object" : "button",
+                    "edge" : "top"
+                  },
+                  "to" : {
+                    "object" : "branch",
+                    "edge" : "bottom"
+                  },
+                  "expectedDistance" : ">= 0px",
+                  "realDistance" : "32px"
+                } ],
+                "highlight" : [ "button", "branch" ]
+              } ]
+            } ]
+          }, {
+            "name" : "Visible section",
+            "place" : {
+              "filePath" : "z3Mobile.gspec",
+              "lineNumber" : 67
+            },
+            "objects" : [ {
+              "name" : "url",
+              "specs" : [ {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "z3Mobile.gspec",
+                  "lineNumber" : 69
+                },
+                "name" : "visible",
+                "highlight" : [ "url" ]
+              } ]
+            }, {
+              "name" : "god",
+              "specs" : [ {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "z3Mobile.gspec",
+                  "lineNumber" : 71
+                },
+                "name" : "visible",
+                "highlight" : [ "god" ]
+              } ]
+            }, {
+              "name" : "branch",
+              "specs" : [ {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "z3Mobile.gspec",
+                  "lineNumber" : 73
+                },
+                "name" : "visible",
+                "highlight" : [ "branch" ]
+              } ]
+            }, {
+              "name" : "button",
+              "specs" : [ {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "z3Mobile.gspec",
+                  "lineNumber" : 75
+                },
+                "name" : "visible",
+                "highlight" : [ "button" ]
+              } ]
+            } ]
+          } ],
+          "objects" : {
+            "button" : {
+              "area" : [ 177, 437, 300, 24 ]
+            },
+            "l1" : {
+              "area" : [ 177, 106, 300, 22 ]
+            },
+            "l2" : {
+              "area" : [ 177, 216, 300, 21 ]
+            },
+            "l3" : {
+              "area" : [ 177, 327, 300, 22 ]
+            },
+            "forma" : {
+              "area" : [ 166, 85, 321, 388 ]
+            },
+            "god" : {
+              "area" : [ 177, 270, 300, 25 ]
+            },
+            "branch" : {
+              "area" : [ 177, 380, 300, 25 ]
+            },
+            "url" : {
+              "area" : [ 177, 159, 300, 25 ]
+            }
+          },
+          "screenshot" : "layout-1-screenshot.png",
+          "type" : "layout"
+        } ],
+        "time" : 1636329862252,
+        "type" : "node"
+      } ],
+      "time" : 1636329860997,
+      "type" : "node"
+    } ]
+  }
+}

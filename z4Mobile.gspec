@@ -1,0 +1,109 @@
+@objects
+	body body
+	f1 #f1
+	f2 #f2
+	vj #vjezba
+	zz #zadatak
+	ver #verzija
+	kom #komentar
+	b1 #b1
+	err #error
+	bzgr #bzgr
+	b2 #b2
+
+= Width section =
+	f1:
+		width 48 to 50 % of body/width
+	f2:
+		width 48 to 50 % of body/width
+	vj:
+		width 63 to 65 % of f1/width
+	zz:
+		width 63 to 65 % of f1/width
+	ver:
+		width 63 to 65 % of f1/width
+	kom:
+		width 63 to 65 % of f1/width
+	b1:
+		width 93 to 95 % of f1/width
+	err:
+		width 63 to 65 % of f2/width
+	bzgr:
+		width 3 to 6 % of f2/width
+	b2:
+		width 93 to 95 % of f2/width
+
+= Height section =
+
+= Inside section =
+	vj:
+		inside f1
+	zz:
+		inside f1
+	ver:
+		inside f1
+	kom:
+		inside f1
+	b1:
+		inside f1
+	err:
+		inside f2
+	bzgr:
+		inside f2
+	b2:
+		inside f2
+= Left of section =
+
+= Right of section =
+
+= Above section =
+	f1:
+		above f2
+	vj:
+		above zz
+	zz:
+		above ver
+	kom:
+		above b1
+	err:
+		above bzgr
+	bzgr:
+		above b2
+
+= Below section =
+	f2:
+		below f1
+	zz:
+		below vj
+	ver:
+		below zz
+	b1:
+		below ver
+	bzgr:
+		below err
+	b2:
+		below bzgr
+= Visible section =
+	f1:
+		visible
+	f2:
+		visible
+	vj:
+		visible
+	zz:
+		visible
+	ver:
+		visible
+	kom:
+		visible
+	b1:
+		visible
+	err:
+		visible
+	bzgr:
+		visible
+	b2:
+		visible
+
+= Inside partly section =
+

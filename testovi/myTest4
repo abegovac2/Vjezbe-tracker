@@ -1,0 +1,5 @@
+#!/bin/bash
+ime_fajla=$1
+sudo cp /home/amar/Documents/VSProjects/WT\ spirala/wt21p18752/view/student/$ime_fajla.html /var/www/html
+sudo cp /home/amar/Documents/VSProjects/WT\ spirala/wt21p18752/view/student/$ime_fajla.css /var/www/html
+galen check z4Mobile.gspec --url http://localhost/$ime_fajla.html --size 799x768 --htmlreport izvjestaji

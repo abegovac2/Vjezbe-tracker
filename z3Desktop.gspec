@@ -1,0 +1,78 @@
+@objects
+	body body
+	forma #forma
+	url #url
+	god #god
+	branch #branch
+	button #button
+	l1 #l1
+	l2 #l2
+	l3 #l3
+
+= Width section =
+	forma:
+		width 48 to 50 % of body/width
+	url:
+		width 64 to 66 % of forma/width
+	god:
+		width 64 to 66 % of forma/width
+	branch:
+		width 64 to 66 % of forma/width
+	button:
+		width 94 to 96 % of forma/width
+
+= Height section =
+
+= Inside section =
+	url:
+		inside forma
+	god:
+		inside forma
+	branch:
+		inside forma
+	button:
+		inside forma
+
+= Left of section =
+	l1:
+		left-of url
+	l2:
+		left-of god
+	l3:
+		left-of branch
+
+= Right of section =
+	url:
+		right-of l1
+	god:
+		right-of l2
+	branch:
+		right-of l3
+
+= Above section =
+	url:
+		above god
+	god:
+		above branch
+	branch:
+		above button
+
+= Below section =
+	god:
+		below url
+	branch:
+		below god
+	button:
+		below branch
+= Visible section =
+	url:
+		visible
+	god:
+		visible
+	branch:
+		visible
+	button:
+		visible
+
+= Inside partly section =
+

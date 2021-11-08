@@ -27,7 +27,7 @@ h2{
 
 @media (max-width: 700px) {
     .forma{
-        height: 50vh;
+        height: 60vh;
         grid-template-areas: 
         'l1'
         'url'
