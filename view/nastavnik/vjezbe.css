@@ -74,13 +74,15 @@ body,html {
 }
 
 .otvaranje:checked + label + .zadaci{
-    display: block;
+    height: 1.5em;
 }
 
 .zadaci{
     background-color: #FFAB85;
     border: 1px solid black;
-    display: none;
+    height: 0px;
+    overflow: hidden;
+    transition: height 0.25s;
 }
 
 .zadaci > div{
