@@ -46,8 +46,9 @@ body,html {
     grid-gap: 1px;
     grid-template-areas: 
     'meni'
+    'grupe'
     'studenti'
-    'grupe';
+    ;
     grid-template-rows: 15% 60% 25%;
 }
 
@@ -69,8 +70,9 @@ body,html {
     .grid-container{
         grid-template-areas: 
         'meni'
+        'grupe'
         'studenti'
-        'grupe';
+        ;
         grid-template-rows: 35% 35% 30%;
     }
 
@@ -107,6 +109,49 @@ body,html {
     height: 100%;
     grid-template-areas: 
     'div div div div';
+}
 
+.st-el{
+    float: left;
+    display: grid;
+    width: 28%;
+    grid-template-areas: 
+    'div ime-prezime'
+    'div index'
+    'div postotak'
+    'div neuradjeno';
+    border: 1px solid black;
+}
+
+@media (max-width: 1600px) {
+    .st-el{
+        width: 45%;
+    }
+}
+
+@media (max-width: 1400px) {
+    .st-el{
+        width: 90%;
+    }
+}
+
+.st-el > *{
+    margin: 8px;
+}
+
+.ime-prezime::before{
+    grid-area: ime;
+}
+
+.index::before{
+    grid-area: index;
+}
+
+.postotak::before{
+    grid-area: postotak;
+}
+
+.neuradjeno::before{
+    grid-area: neuradjeno;
 }
 

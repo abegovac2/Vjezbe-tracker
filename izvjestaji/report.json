@@ -1,17 +1,17 @@
 {
   "tests" : [ {
-    "name" : "z4Mobile.gspec",
-    "startedAt" : 1636331228358,
-    "endedAt" : 1636331232301,
+    "name" : "z1Desktop.gspec",
+    "startedAt" : 1636725698729,
+    "endedAt" : 1636725701608,
     "failed" : false,
     "statistic" : {
-      "passed" : 40,
+      "passed" : 20,
       "errors" : 0,
       "warnings" : 0,
-      "total" : 40
+      "total" : 20
     },
-    "testId" : "1-z4mobile.gspec",
-    "duration" : 3943,
+    "testId" : "1-z1desktop.gspec",
+    "duration" : 2879,
     "failed" : false
   } ]
 }

@@ -43,8 +43,8 @@
 		above studenti
 	vjezbelnk:
 		above grupe
-	studenti:
-		above grupe
+	grupe:
+		above studenti
 
 = Below section =
 	studenti:
@@ -59,8 +59,8 @@
 		below vjezbelnk
 	grupe:
 		below vjezbelnk
-	grupe:
-		below studenti
+	studenti:
+		below grupe
 = Visible section =
 	meni:
 		visible

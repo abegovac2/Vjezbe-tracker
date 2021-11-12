@@ -20,7 +20,7 @@ var REPORT_DATA = {
         "nodes" : [ {
           "name" : "Check layout: z1Tablet.gspec included tags: ",
           "status" : "info",
-          "time" : 1636239348583,
+          "time" : 1636725684639,
           "sections" : [ {
             "name" : "Width section",
             "place" : {
@@ -213,7 +213,7 @@ var REPORT_DATA = {
                     "edge" : "top"
                   },
                   "expectedDistance" : ">= 0px",
-                  "realDistance" : "0px"
+                  "realDistance" : "387px"
                 } ],
                 "highlight" : [ "meni", "studenti" ]
               }, {
@@ -233,7 +233,7 @@ var REPORT_DATA = {
                     "edge" : "top"
                   },
                   "expectedDistance" : ">= 0px",
-                  "realDistance" : "387px"
+                  "realDistance" : "0px"
                 } ],
                 "highlight" : [ "meni", "grupe" ]
               } ]
@@ -256,7 +256,7 @@ var REPORT_DATA = {
                     "edge" : "top"
                   },
                   "expectedDistance" : ">= 0px",
-                  "realDistance" : "17px"
+                  "realDistance" : "404px"
                 } ],
                 "highlight" : [ "grupelnk", "studenti" ]
               }, {
@@ -276,7 +276,7 @@ var REPORT_DATA = {
                     "edge" : "top"
                   },
                   "expectedDistance" : ">= 0px",
-                  "realDistance" : "404px"
+                  "realDistance" : "17px"
                 } ],
                 "highlight" : [ "grupelnk", "grupe" ]
               } ]
@@ -299,7 +299,7 @@ var REPORT_DATA = {
                     "edge" : "top"
                   },
                   "expectedDistance" : ">= 0px",
-                  "realDistance" : "17px"
+                  "realDistance" : "404px"
                 } ],
                 "highlight" : [ "vjezbelnk", "studenti" ]
               }, {
@@ -319,32 +319,32 @@ var REPORT_DATA = {
                     "edge" : "top"
                   },
                   "expectedDistance" : ">= 0px",
-                  "realDistance" : "404px"
+                  "realDistance" : "17px"
                 } ],
                 "highlight" : [ "vjezbelnk", "grupe" ]
               } ]
             }, {
-              "name" : "studenti",
+              "name" : "grupe",
               "specs" : [ {
                 "status" : "info",
                 "place" : {
                   "filePath" : "z1Tablet.gspec",
                   "lineNumber" : 47
                 },
-                "name" : "above grupe",
+                "name" : "above studenti",
                 "meta" : [ {
                   "from" : {
-                    "object" : "studenti",
+                    "object" : "grupe",
                     "edge" : "bottom"
                   },
                   "to" : {
-                    "object" : "grupe",
+                    "object" : "studenti",
                     "edge" : "top"
                   },
                   "expectedDistance" : ">= 0px",
                   "realDistance" : "1px"
                 } ],
-                "highlight" : [ "studenti", "grupe" ]
+                "highlight" : [ "grupe", "studenti" ]
               } ]
             } ]
           }, {
@@ -372,7 +372,7 @@ var REPORT_DATA = {
                     "edge" : "bottom"
                   },
                   "expectedDistance" : ">= 0px",
-                  "realDistance" : "0px"
+                  "realDistance" : "387px"
                 } ],
                 "highlight" : [ "studenti", "meni" ]
               }, {
@@ -392,7 +392,7 @@ var REPORT_DATA = {
                     "edge" : "bottom"
                   },
                   "expectedDistance" : ">= 0px",
-                  "realDistance" : "17px"
+                  "realDistance" : "404px"
                 } ],
                 "highlight" : [ "studenti", "grupelnk" ]
               }, {
@@ -412,9 +412,29 @@ var REPORT_DATA = {
                     "edge" : "bottom"
                   },
                   "expectedDistance" : ">= 0px",
-                  "realDistance" : "17px"
+                  "realDistance" : "404px"
                 } ],
                 "highlight" : [ "studenti", "vjezbelnk" ]
+              }, {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "z1Tablet.gspec",
+                  "lineNumber" : 63
+                },
+                "name" : "below grupe",
+                "meta" : [ {
+                  "from" : {
+                    "object" : "studenti",
+                    "edge" : "top"
+                  },
+                  "to" : {
+                    "object" : "grupe",
+                    "edge" : "bottom"
+                  },
+                  "expectedDistance" : ">= 0px",
+                  "realDistance" : "1px"
+                } ],
+                "highlight" : [ "studenti", "grupe" ]
               } ]
             }, {
               "name" : "grupe",
@@ -435,7 +455,7 @@ var REPORT_DATA = {
                     "edge" : "bottom"
                   },
                   "expectedDistance" : ">= 0px",
-                  "realDistance" : "387px"
+                  "realDistance" : "0px"
                 } ],
                 "highlight" : [ "grupe", "meni" ]
               }, {
@@ -455,7 +475,7 @@ var REPORT_DATA = {
                     "edge" : "bottom"
                   },
                   "expectedDistance" : ">= 0px",
-                  "realDistance" : "404px"
+                  "realDistance" : "17px"
                 } ],
                 "highlight" : [ "grupe", "grupelnk" ]
               }, {
@@ -475,29 +495,9 @@ var REPORT_DATA = {
                     "edge" : "bottom"
                   },
                   "expectedDistance" : ">= 0px",
-                  "realDistance" : "404px"
+                  "realDistance" : "17px"
                 } ],
                 "highlight" : [ "grupe", "vjezbelnk" ]
-              }, {
-                "status" : "info",
-                "place" : {
-                  "filePath" : "z1Tablet.gspec",
-                  "lineNumber" : 63
-                },
-                "name" : "below studenti",
-                "meta" : [ {
-                  "from" : {
-                    "object" : "grupe",
-                    "edge" : "top"
-                  },
-                  "to" : {
-                    "object" : "studenti",
-                    "edge" : "bottom"
-                  },
-                  "expectedDistance" : ">= 0px",
-                  "realDistance" : "1px"
-                } ],
-                "highlight" : [ "grupe", "studenti" ]
               } ]
             } ]
           }, {
@@ -618,19 +618,19 @@ var REPORT_DATA = {
               "area" : [ 87, 62, 45, 18 ]
             },
             "grupe" : {
-              "area" : [ 0, 484, 740, 161 ]
+              "area" : [ 0, 97, 740, 386 ]
             },
             "studenti" : {
-              "area" : [ 0, 97, 740, 386 ]
+              "area" : [ 0, 484, 740, 161 ]
             }
           },
           "screenshot" : "layout-1-screenshot.png",
           "type" : "layout"
         } ],
-        "time" : 1636239346456,
+        "time" : 1636725682466,
         "type" : "node"
       } ],
-      "time" : 1636239345365,
+      "time" : 1636725681274,
       "type" : "node"
     } ]
   }
