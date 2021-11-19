@@ -64,9 +64,12 @@ var TestoviParser = (function () {
         obj1.failures = obj1.failures.map(x => x.fullTitle);
         obj2.failures = obj2.failures.map(x => x.fullTitle);
 
-        if (areEqual(obj1.failures, obj2.failures)) {
+        let testovi1 = obj1.tests == null ? [] : obj1.tests.map(x => x.fullTitle);
+        let testovi2 = obj2.tests == null ? [] : obj2.tests.map(x => x.fullTitle);
+
+        if (areEqual(testovi1, testovi2)) {
             res['promjena'] = (obj2.stats.passes / obj2.stats.tests * 100) + "%";
-            res['greske'] = obj1.failures == null ? [] : obj1.failures.sort();
+            res['greske'] = obj2.failures == null ? [] : obj2.failures.sort();
         } else {
             let greske = [];
             for (let i = 0; i < obj1.failures.length; i++)
