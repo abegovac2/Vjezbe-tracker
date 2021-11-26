@@ -85,21 +85,7 @@ body,html {
     transition: height 0.25s;
 }
 
-.zadaci1{
-    background-color: #FFAB85;
-    border: 1px solid black;
-    height: auto;
-}
-
 .zadaci > div{
-    width: auto;
-    display: inline;
-    background-color: #FFD5C2;
-    margin: 1em;
-    font-size: 1.3em;
-}
-
-.zadaci1 > div {
     width: auto;
     display: inline;
     background-color: #FFD5C2;
