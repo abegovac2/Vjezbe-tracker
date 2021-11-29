@@ -43,13 +43,17 @@ var TestoviParser = (function () {
                 jsonObj.failures == null)
                 throw "Greska";
         } catch (err) {
-            return "{\"tacnost\":\"0%\",\"greske\":\"Testovi se ne mogu izvrsiti\"}"
+            let res = {
+                tacnost : "0%",
+                greske : "Testovi se ne mogu izvrsiti"
+            };
+            return res;
         }
         let res = {};
 
         res['tacnost'] = (jsonObj.stats.passes / jsonObj.stats.tests * 100) + "%";
         res['greske'] = jsonObj.failures.map(x => x.fullTitle);
-        return JSON.stringify(res).replace(/[\n\t]/g, '');
+        return res;
     };
 
     const porediRezultate = function (rezultat1, rezultat2) {
@@ -83,7 +87,7 @@ var TestoviParser = (function () {
             res['promjena'] = promjena + "%";
             res['greske'] = greske;
         }
-        return JSON.stringify(res).replace(/[\n\t]/g, '');;
+        return res;
     };
 
     return {
@@ -91,5 +95,3 @@ var TestoviParser = (function () {
         porediRezultate: porediRezultate
     };
 }());
-
-module.exports = TestoviParser;
