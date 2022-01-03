@@ -1,5 +1,4 @@
-//import { posaljiPodatke, dodajInputPolja } from "./VjezbeAjax.js";
-var brojVjezbi, brojZadataka, saljiBtn;
+let brojVjezbi, brojZadataka, saljiBtn;
 
 function ajaxOnCallback(err, value) {
   let result = document.getElementById("result");

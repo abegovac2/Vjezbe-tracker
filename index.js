@@ -30,35 +30,51 @@ let getVjezbeData = function (req, res) {
     if (err) throw err;
     data = data.split("\n");
     data.shift();
-    data = data.map((el) => parseInt(el));
-    obj["brojVjezbi"] = data.length;
-    obj["brojZadataka"] = data;
-    res.send(obj);
+    try {
+      data = data.map((el) => parseInt(el));
+      obj["brojVjezbi"] = data.length;
+      obj["brojZadataka"] = data;
+      let { sendErr, errMess } = checkValidInput(
+        obj.brojVjezbi,
+        obj.brojZadataka
+      );
+      if(sendErr) throw "Invalid parameters.";
+      res.send(obj);
+    } catch (e) {
+      console.log(e);
+      res.status(400).send();
+    }
   });
 };
+
+function checkValidInput(brojVjezbi, brojZadataka) {
+  let sendErr =
+    brojVjezbi == undefined ||
+    brojVjezbi < 1 ||
+    brojVjezbi > 15 ||
+    brojVjezbi != brojZadataka.length;
+  let errMess = "Pogresan parametar ";
+  if (sendErr) errMess += "brojVjezbi";
+  if (brojZadataka == undefined) {
+    errMess += `${sendErr ? "," : ""}brojZadataka`;
+    sendErr = true;
+  } else {
+    for (let i = 0; i < brojZadataka.length; ++i) {
+      const br = brojZadataka[i];
+      if (br < 0 || br > 10) {
+        errMess += `${sendErr ? "," : ""}z${i}`;
+        sendErr = true;
+      }
+    }
+  }
+  return { sendErr, errMess };
+}
 
 app
   .route("/vjezbe")
   .post(function (req, res, next) {
     let { brojVjezbi, brojZadataka } = req.body;
-    let sendErr =
-      brojVjezbi == undefined ||
-      brojVjezbi < 1 ||
-      brojVjezbi > 15 ||
-      brojVjezbi != brojZadataka.length;
-    let errMess = "Pogresan parametar ";
-    if (sendErr) errMess += "brojVjezbi";
-    if (brojZadataka == undefined) {
-      errMess += `${sendErr ? "," : ""}brojZadataka`;
-      sendErr = true;
-    } else
-      for (let i = 0; i < brojZadataka.length; ++i) {
-        const br = brojZadataka[i];
-        if (br < 0 || br > 10) {
-          errMess += `${sendErr ? "," : ""}z${i}`;
-          sendErr = true;
-        }
-      }
+    let { sendErr, errMess } = checkValidInput(brojVjezbi, brojZadataka);
     if (sendErr) {
       res.send({ status: "error", data: errMess });
     } else {
