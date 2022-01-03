@@ -18,11 +18,6 @@ function posaljiPodatke(vjezbeObjekat, callBackFja) {
       callBackFja(undefined, ajax.responseText);
   };
   ajax.open("POST", "http://localhost:3000/vjezbe", true);
-  /*ajax.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
-  let { brojVjezbi, brojZadataka } = vjezbeObjekat;
-  brojVjezbi = encodeURIComponent(brojVjezbi);
-  brojZadataka = encodeURIComponent(brojZadataka);
-  ajax.send(`brojVjezbi=${brojVjezbi}&brojZadataka=${brojZadataka}`);*/
   ajax.setRequestHeader("Content-type", "application/json");
   let jsonStr = JSON.stringify(vjezbeObjekat);
   ajax.send(jsonStr);
@@ -37,7 +32,6 @@ function dohvatiPodatke(callBackFja) {
       callBackFja(undefined, ajax.responseText);
   };
   ajax.open("GET", "http://localhost:3000/vjezbe", true);
-  ajax.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
   ajax.send();
 }
 

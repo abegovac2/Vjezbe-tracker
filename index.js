@@ -41,8 +41,6 @@ app
   .route("/vjezbe")
   .post(function (req, res, next) {
     let { brojVjezbi, brojZadataka } = req.body;
-    //brojVjezbi = parseInt(brojVjezbi);
-    //brojZadataka = brojZadataka.split(",").map((x) =>  parseInt(x));
     let sendErr =
       brojVjezbi == undefined ||
       brojVjezbi < 1 ||
