@@ -74,7 +74,11 @@ body,html {
 }
 
 .otvaranje:checked + label + .zadaci{
-    height: 1.5em;
+    height: auto;
+}
+
+.otvaranje-zero:checked + label + .zadaci{
+    height: 1.9em;
 }
 
 .zadaci{
@@ -82,15 +86,17 @@ body,html {
     border: 1px solid black;
     height: 0px;
     overflow: hidden;
-    transition: height 0.25s;
+    /*transition: height 0.25s;*/
 }
 
 .zadaci > div{
     width: auto;
-    display: inline;
+    float: left;
     background-color: #FFD5C2;
-    margin: 1em;
+    margin: 0.1em;
+    margin-left: 0.5em;
     font-size: 1.3em;
+    padding: 0.1em;
 }
 
 /*za vjezbe*/
