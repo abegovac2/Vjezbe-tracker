@@ -1,7 +1,7 @@
 body{
     width: 100%;
     height: 100vh;
-    background-color: purple;
+    background-color: lightgrey;
 }
 
 body,html {
@@ -13,7 +13,9 @@ body,html {
 
 #meni{
     grid-area: meni;
-    background-color: #FF570A;
+    background-color: #fdbf02;
+    border-bottom-left-radius: 10px;
+    border: #363636 2px solid;
 }
 
 .menu-options{
@@ -23,19 +25,31 @@ body,html {
 
 .menu-options > a{
     padding: 1em;
+    color: #363636;
+    font-weight: bold;
+    font-size: large;
+    margin: 5px;
 }
+
+.menu-options > a:hover{
+    background-color: white;
+    border-radius: 10px;
+    border: lightgrey 1px solid;
+}
+
+
 
 /*meni*/
 
 .graf{
-    background-color: #D72638;
-    border: 1px solid black;
+    background-color: #fdbf02;
+    border: 1px solid #363636;
 }
 
 .graf > h4{
     text-align: center;
     margin: 0;
-    padding-top: 10px;
+    padding: 10px;
 }
 
 .graf > div{
@@ -52,7 +66,6 @@ body,html {
 /*za vjezbe*/
 #odabirVjezbe{
     grid-area: odabirVjezbe;
-    background-color: #ffffff;
 }
 
 #odabirVjezbe > div{
@@ -62,12 +75,22 @@ body,html {
 #odabirVjezbe > div > label{
     margin: auto;
     text-align: center;
-    background-color: gainsboro;
+    background-color: #363636;
+    color: white;
     width: 100%;
     display: inline-block;
     font-size: 1.5em;
-    
+    border-radius: 10px 10px 5px 5px;
+    border: #363636 solid 1px;
+    font-weight: bold;
 }
+
+#odabirVjezbe > div > label:hover{
+    color: #363636;
+    background-color: white;
+}
+
+
 
 #odabirVjezbe > div > input {
     display: none;
@@ -75,28 +98,33 @@ body,html {
 
 .otvaranje:checked + label + .zadaci{
     height: auto;
+    border: 1px solid #363636;
 }
 
 .otvaranje-zero:checked + label + .zadaci{
     height: 1.9em;
+    border: 1px solid #363636;
 }
 
 .zadaci{
-    background-color: #FFAB85;
-    border: 1px solid black;
+    background-color: #fff7c2;
     height: 0px;
     overflow: hidden;
-    /*transition: height 0.25s;*/
+    border-radius: 0 0 10px 10px;
+    width: 99%;
+    margin: auto;
 }
 
 .zadaci > div{
     width: auto;
     float: left;
-    background-color: #FFD5C2;
+    background-color: #ffec73;
     margin: 0.1em;
     margin-left: 0.5em;
     font-size: 1.3em;
     padding: 0.1em;
+    border-radius: 10px;
+    border: 0.5px #363636 solid;
 }
 
 /*za vjezbe*/
@@ -126,6 +154,11 @@ body,html {
         'odabirVjezbe grafovi';
         grid-template-rows: 10%;
         grid-template-columns: 50% 50%;
+    }
+
+    #odabirVjezbe{
+        width: 100%;
+        height: 100%;
     }
 
 

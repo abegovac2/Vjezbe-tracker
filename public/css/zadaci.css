@@ -1,9 +1,6 @@
 .f1{
     margin: auto;
-    width: 50%;
-    height: 40vh;
     grid-gap: 2px;
-    background-color: #FF570A;
     display: grid;
     grid-template-areas: 
     'label vjezba'
@@ -13,7 +10,15 @@
     'b1 b1'
     ;
     grid-template-columns: 30%;
-    border: 1px solid purple;
+}
+
+div{
+    background-color: #fdbf02;
+    width: 50%;
+    height: 100%;
+    border: 1px solid lightgray;
+    border-radius: 10px;
+    margin: auto;
 }
 
 #vjezba{
@@ -38,19 +43,16 @@
 
 .f2{
     margin: auto;
-    width: 50%;
-    height: 30vh;
     grid-gap: 2px;
-    background-color: #FF570A;
+    height: 70%;
     display: grid;
     grid-template-areas: 
     'label error'
     'label bzgr'
     'b2 b2'
     ;
-    grid-template-rows: 70% 10%;
+    grid-template-rows: 35% 35%;
     grid-template-columns: 30%;
-    border: 1px solid purple;
 }
 
 form > *{
@@ -67,16 +69,27 @@ form > *{
 
 #b2{
     grid-area: b2;
+    
 }
 
 h3{
     margin: auto;
     padding: 2em;
     text-align: center;
-    background-color: #FF570A;
-    width: 50%;
-    border: 1px solid purple;
 
+}
+
+input[type="button"]{
+    background-color: #363636;
+    color: white;
+    font-size: medium;
+    font-weight: bold;
+    border-radius: 10px;
+}
+
+input[type="button"]:hover{
+    background-color: white;
+    color: #363636;
 }
 
 @media (min-width: 800px) {

@@ -2,19 +2,18 @@
 body,html {
     margin: 0;
     padding: 0;
-    background-color: purple;
+    background-color: lightgrey;
 }
 
 #grupe{
     grid-area: grupe;
-    background-color: #D72638;
+    background-color: #fdbf02;
     height: 100%;
-   
+   border: black 2px solid
 }
 
 #studenti{
     grid-area: studenti;
-    background-color: #FFFFFF;
   
 }
 
@@ -25,7 +24,9 @@ body,html {
 
 #meni{
     grid-area: meni;
-    background-color: #FF570A;
+    background-color: #fdbf02;
+    border-bottom-left-radius: 10px;
+    border: #363636 2px solid;
 }
 
 .menu-options{
@@ -36,7 +37,16 @@ body,html {
 }
 
 .menu-options > a{
-    margin: 1em;
+    padding: 1em;
+    color: #363636;
+    font-weight: bold;
+    font-size: large;
+    margin: auto;
+}
+
+.menu-options > a:hover{
+    background-color: white;
+    border-radius: 10px;
 }
 
 .grid-container{
@@ -61,7 +71,6 @@ body,html {
     }
 
     .menu-options > a{
-        margin: auto;
         width: 100%;
         display: block;
         text-align: center;
@@ -95,12 +104,28 @@ body,html {
     border: 1px solid black;
 }
 
+th{
+    background-color: #f5d142;
+    padding: 5px;
+}
+
+td{
+    padding: 5px;
+}
+
+tr:nth-child(2n){
+    background-color: #f7e28d;
+}
+
 #tabela-grupa{
-    border: 1px solid black;
+    border: 3px solid black;
     text-align: center;
     border-spacing: 0;
     margin:  auto;
-    margin-top: 15px
+    margin-top: 15px;
+    border-radius: 10px; 
+    background-color: lightgrey;
+    font-size: large;
 }
 
 .grid-studenata{
@@ -121,6 +146,14 @@ body,html {
     'div postotak'
     'div neuradjeno';
     border: 1px solid black;
+    border-radius: 10px;
+    background-color: #363636;
+    color: white;
+}
+
+.st-el:hover{
+    background-color: white;
+    color: #363636;
 }
 
 @media (max-width: 1600px) {

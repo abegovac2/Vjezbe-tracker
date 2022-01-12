@@ -2,16 +2,17 @@
 <html>
   <head>
     <title>Unos vjezbi</title>
+    <link rel="stylesheet" type="text/css" href="../css/unosVjezbi.css" />
   </head>
   <body>
     <script src="../js/unosVjezbi.js"></script>
     <script src="../js/VjezbeAjax.js"></script>
-    <label for="brojVjezbi">Broj vjezbi:</label>
-    <input type="number" name="brojVjezbi" id="brojVjezbi" />
-    <br />
-    <br />
-    <div id="brojZadataka"></div>
-    <button id="salji">Pošalji</button>
-    <div id="result"></div>
+    <div class="div1">
+      <label id="naziv" for="brojVjezbi">Broj vjezbi:</label>
+      <input type="number" name="brojVjezbi" id="brojVjezbi" />
+      <div id="brojZadataka"></div>
+      <button id="salji">Pošalji</button>
+    </div>
+    <div id="result" class="div2"></div>
   </body>
 </html>
