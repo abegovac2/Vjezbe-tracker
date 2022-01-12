@@ -17,9 +17,9 @@ app.use(
 );
 
 app.use(express.static(path.join(__dirname, "public")));
-app.use(express.static(path.join(__dirname, "public","html")));
+app.use(express.static(path.join(__dirname, "public", "html")));
 /*u svrhe testiranja*/
-app.use(express.static(path.join(__dirname, "test","spirala 3")));
+app.use(express.static(path.join(__dirname, "test", "spirala 3")));
 
 app.get("/", (req, res) => {
   res.sendFile(path.join(__dirname, "public", "html", "vjezbe.html"));
@@ -53,17 +53,12 @@ function checkValidInput(brojVjezbi, brojZadataka) {
     typeof brojVjezbi != "number" ||
     brojVjezbi == undefined ||
     brojVjezbi < 1 ||
-    brojVjezbi > 15 ||
-    brojVjezbi != brojZadataka.length;
+    brojVjezbi > 15;
 
   let errMess = "Pogresan parametar ";
 
   if (sendErr) errMess += "brojVjezbi";
-
-  if (brojZadataka == undefined) {
-    errMess += `${sendErr ? "," : ""}brojZadataka`;
-    sendErr = true;
-  } else {
+  if (brojZadataka != undefined) {
     for (let i = 0; i < brojZadataka.length; ++i) {
       const br = brojZadataka[i];
       if (typeof br !== "number" || br < 0 || br > 10) {
@@ -72,6 +67,11 @@ function checkValidInput(brojVjezbi, brojZadataka) {
       }
     }
   }
+  if (brojVjezbi != brojZadataka.length) {
+    errMess += `${sendErr ? "," : ""}brojZadataka`;
+    sendErr = true;
+  }
+
   return { sendErr, errMess };
 }
 

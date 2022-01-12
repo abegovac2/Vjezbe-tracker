@@ -3,7 +3,7 @@
 function dodajInputPolja(DOMelementDIVauFormi, brojVjezbi) {
   DOMelementDIVauFormi.innerHTML = "";
 
-  let num_of_elements = brojVjezbi > 15 ? 15 : brojVjezbi < 0 ? 0 : brojVjezbi;
+  let num_of_elements = brojVjezbi > 15 ? 15 : brojVjezbi < 1 ? 1 : brojVjezbi;
 
   for (let i = 0; i < num_of_elements; ++i) {
     DOMelementDIVauFormi.innerHTML += `<label for="z${i}">${`z${i}`}</label>\n
@@ -44,7 +44,7 @@ function iscrtajVjezbe(divDOMelement, objekat) {
 
   for (let i = 0; i < objekat.brojVjezbi; ++i) {
     let jelURasponu =
-      objekat.brojZadataka[i] > 15 || objekat.brojZadataka[i] < 0;
+      objekat.brojZadataka[i] > 10 || objekat.brojZadataka[i] < 0;
     divDOMelement.innerHTML += `<div class="content" onclick="iscrtajZadatke(document.getElementById('zadaci${i}'), ${
       jelURasponu ? null : objekat.brojZadataka[i]
     })">
@@ -61,7 +61,7 @@ function iscrtajVjezbe(divDOMelement, objekat) {
 }
 
 function iscrtajZadatke(vjezbaDOMelement, brojZadataka) {
-  if (brojZadataka == null || brojZadataka > 15 || brojZadataka < 0)
+  if (brojZadataka == null || brojZadataka > 10 || brojZadataka < 0)
     vjezbaDOMelement.innerHTML = `<div>${`Greška pri dohvatanju zadataka`}</div>`;
   else {
     let { children } = vjezbaDOMelement;

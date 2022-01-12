@@ -16,7 +16,7 @@ const testoviSlanjaPodataka = () => {
     let sadrzaj = { brojVjezbi: 4, brojZadataka: [1, 3, 4] };
     let sadrzajJson = JSON.stringify({
       status: "error",
-      data: "Pogresan parametar brojVjezbi",
+      data: "Pogresan parametar brojZadataka",
     });
 
     VjezbeAjax.posaljiPodatke(sadrzaj, (err, data) => {
@@ -34,7 +34,7 @@ const testoviSlanjaPodataka = () => {
     let sadrzaj = { brojVjezbi: -4, brojZadataka: [1, 3, 4] };
     let sadrzajJson = JSON.stringify({
       status: "error",
-      data: "Pogresan parametar brojVjezbi",
+      data: "Pogresan parametar brojVjezbi,brojZadataka",
     });
 
     VjezbeAjax.posaljiPodatke(sadrzaj, (err, data) => {
@@ -147,7 +147,7 @@ const testoviSlanjaPodataka = () => {
     };
     let sadrzajJson = JSON.stringify({
       status: "error",
-      data: "Pogresan parametar brojVjezbi,z2,z4,z6,z10",
+      data: "Pogresan parametar brojVjezbi,z2,z4,z6,z10,brojZadataka",
     });
 
     VjezbeAjax.posaljiPodatke(sadrzaj, (err, data) => {
@@ -170,7 +170,7 @@ const testoviSlanjaPodataka = () => {
     };
     let sadrzajJson = JSON.stringify({
       status: "error",
-      data: "Pogresan parametar brojVjezbi,z0,z1,z2,z3,z4,z5,z6,z7,z8,z9,z10",
+      data: "Pogresan parametar brojVjezbi,z0,z1,z2,z3,z4,z5,z6,z7,z8,z9,z10,brojZadataka",
     });
 
     VjezbeAjax.posaljiPodatke(sadrzaj, (err, data) => {
@@ -221,7 +221,7 @@ const testoviDodavanjeInputPolja = () => {
     inputs.forEach((x) => assert.equal(x.value, 4));
   });
 
-  it("Negativan broj unosa - max 15", function () {
+  it("Pozitivan broj unosa - max 15", function () {
     let testDiv = document.createElement("div");
     VjezbeAjax.dodajInputPolja(testDiv, 16);
     let inputs = testDiv.getElementsByTagName("INPUT");
@@ -229,11 +229,11 @@ const testoviDodavanjeInputPolja = () => {
     inputs.forEach((x) => assert.equal(x.value, 4));
   });
 
-  it("Negativan broj unosa - min 0", function () {
+  it("Negativan broj unosa - min 1", function () {
     let testDiv = document.createElement("div");
     VjezbeAjax.dodajInputPolja(testDiv, 0);
     let inputs = testDiv.getElementsByTagName("INPUT");
-    assert.equal(inputs.length, 0);
+    assert.equal(inputs.length, 1);
     inputs.forEach((x) => assert.equal(x.value, 4));
   });
 };
