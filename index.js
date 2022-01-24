@@ -2,8 +2,13 @@ const express = require("express");
 const session = require("express-session");
 const bodyParser = require("body-parser");
 const fs = require("fs");
+
 const path = require("path");
 const app = express();
+const sequelize = require("./database/database");
+
+const vjezbeRoutes = require("./routes/routeVjezbe");
+const studentiRoutes = require("./routes/routeStudent");
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
@@ -25,6 +30,9 @@ app.get("/", (req, res) => {
   res.sendFile(path.join(__dirname, "public", "html", "vjezbe.html"));
 });
 
+app.use("/vjezbe", vjezbeRoutes);
+app.use("/student", studentiRoutes);
+/*
 let getVjezbeData = function (req, res) {
   let obj = {};
   fs.readFile("./vjezbe.csv", "utf-8", function (err, data) {
@@ -75,6 +83,7 @@ function checkValidInput(brojVjezbi, brojZadataka) {
   return { sendErr, errMess };
 }
 
+
 app
   .route("/vjezbe")
   .post(function (req, res, next) {
@@ -97,5 +106,12 @@ app
     }
   }, getVjezbeData)
   .get(getVjezbeData);
+  */
+/*
+sequelize
+  .sync()
+  .then(() => app.listen(3000))
+  .catch(err => console.log(err));
+*/
 
 app.listen(3000);
