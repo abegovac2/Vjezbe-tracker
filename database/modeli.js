@@ -35,6 +35,12 @@ const Student = sequelize.define("student", {
   index: {
     type: Sequelize.STRING,
     field: "index",
+    validate: {
+      id: {
+        args: [/[0-9]{3,}/g],
+        msg: "Index se sastoji samo od brojčanih znakova!",
+      },
+    },
   },
   grupa: {
     type: Sequelize.STRING,
@@ -50,9 +56,9 @@ const Vjezba = sequelize.define("vjezba", {
     allowNull: false,
     primaryKey: true,
   },
-  nazivVjezbe: {
-    type: Sequelize.STRING,
-    field: "nazivVjezbe",
+  brojVjezbi: {
+    type: Sequelize.INTEGER,
+    field: "brojVjezbi",
   },
 });
 
@@ -64,9 +70,9 @@ const Zadatak = sequelize.define("zadatak", {
     allowNull: false,
     primaryKey: true,
   },
-  vjezbaId: {
+  brojZadataka: {
     type: Sequelize.INTEGER,
-    field: "vjezbaId",
+    field: "brojZadataka",
   },
 });
 
