@@ -218,7 +218,7 @@ const testoviDodavanjeInputPolja = () => {
     VjezbeAjax.dodajInputPolja(testDiv, 8);
     let inputs = testDiv.getElementsByTagName("INPUT");
     assert.equal(inputs.length, 8);
-    inputs.forEach((x) => assert.equal(x.value, 4));
+    Array.from(inputs).forEach((x) => assert.equal(x.value, 4));
   });
 
   it("Pozitivan broj unosa - max 15", function () {
@@ -226,7 +226,7 @@ const testoviDodavanjeInputPolja = () => {
     VjezbeAjax.dodajInputPolja(testDiv, 16);
     let inputs = testDiv.getElementsByTagName("INPUT");
     assert.equal(inputs.length, 15);
-    inputs.forEach((x) => assert.equal(x.value, 4));
+    Array.from(inputs).forEach((x) => assert.equal(x.value, 4));
   });
 
   it("Negativan broj unosa - min 1", function () {
@@ -234,7 +234,7 @@ const testoviDodavanjeInputPolja = () => {
     VjezbeAjax.dodajInputPolja(testDiv, 0);
     let inputs = testDiv.getElementsByTagName("INPUT");
     assert.equal(inputs.length, 1);
-    inputs.forEach((x) => assert.equal(x.value, 4));
+    Array.from(inputs).forEach((x) => assert.equal(x.value, 4));
   });
 };
 
@@ -246,7 +246,7 @@ const testoviCrtanjaVjezbi = () => {
     let elems = testDiv.getElementsByClassName("content");
     assert.equal(elems.length, testniObjekat.brojVjezbi);
     let i = 0;
-    elems.forEach((x) => {
+    Array.from(elems).forEach((x) => {
       assert.equal(
         x.onclick.toString(),
         `function onclick(event) {\niscrtajZadatke(document.getElementById(\'zadaci${i}\'), ${
@@ -266,7 +266,7 @@ const testoviCrtanjaVjezbi = () => {
     let elems = testDiv.getElementsByClassName("content");
     assert.equal(elems.length, testniObjekat.brojVjezbi);
     let i = 0;
-    elems.forEach((x) => {
+    Array.from(elems).forEach((x) => {
       iscrtajZadatke(x.lastChild, testniObjekat.brojZadataka[i]);
       let { children } = x.lastChild;
       if (i == 2) {
@@ -275,7 +275,7 @@ const testoviCrtanjaVjezbi = () => {
       } else {
         assert.equal(children.length, testniObjekat.brojZadataka[i]);
         let j = 0;
-        children.forEach((x) => {
+        Array.from(children).forEach((x) => {
           assert.equal(x.innerHTML, `Zadatak${j}`);
           ++j;
         });
@@ -291,7 +291,7 @@ const testoviCrtanjaVjezbi = () => {
     let elems = testDiv.getElementsByClassName("content");
     assert.equal(elems.length, testniObjekat.brojVjezbi);
     let i = 0;
-    elems.forEach((x) => {
+    Array.from(elems).forEach((x) => {
       iscrtajZadatke(x.lastChild, testniObjekat.brojZadataka[i]);
       let { children } = x.lastChild;
       if (i == 1 || i == 3) {
@@ -300,7 +300,7 @@ const testoviCrtanjaVjezbi = () => {
       } else {
         assert.equal(children.length, testniObjekat.brojZadataka[i]);
         let j = 0;
-        children.forEach((x) => {
+        Array.from(children).forEach((x) => {
           assert.equal(x.innerHTML, `Zadatak${j}`);
           ++j;
         });
@@ -319,7 +319,7 @@ const testoviCrtanjaVjezbi = () => {
     let elems = testDiv.getElementsByClassName("content");
     assert.equal(elems.length, testniObjekat.brojVjezbi);
     let i = 0;
-    elems.forEach((x) => {
+    Array.from(elems).forEach((x) => {
       iscrtajZadatke(x.lastChild, testniObjekat.brojZadataka[i]);
       let { children } = x.lastChild;
       if (i % 2 == 0) {
@@ -328,7 +328,7 @@ const testoviCrtanjaVjezbi = () => {
       } else {
         assert.equal(children.length, testniObjekat.brojZadataka[i]);
         let j = 0;
-        children.forEach((x) => {
+        Array.from(children).forEach((x) => {
           assert.equal(x.innerHTML, `Zadatak${j}`);
           ++j;
         });
@@ -347,7 +347,7 @@ const testoviCrtanjaVjezbi = () => {
     let elems = testDiv.getElementsByClassName("content");
     assert.equal(elems.length, testniObjekat.brojVjezbi);
     let i = 0;
-    elems.forEach((x) => {
+    Array.from(elems).forEach((x) => {
       iscrtajZadatke(x.lastChild, testniObjekat.brojZadataka[i]);
       let { children } = x.lastChild;
       assert.equal(children.length, 1);
