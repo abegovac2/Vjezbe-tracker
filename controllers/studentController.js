@@ -7,7 +7,7 @@ const studentController = (() => {
       where: {
         nazivGrupe: grupa,
       },
-      default: {
+      defaults: {
         nazivGrupe: grupa,
       },
     });
@@ -55,11 +55,14 @@ const studentController = (() => {
 
   const postBatchStudenata = (req, res) => {
     let { csv } = req.body;
+    if (!csv) {
+      csv = req.body;
+    }
     csv = csv.split(/[,\n]/g);
     let duplikati = [];
     let obecanja = [];
     let indeksi = [];
-    for (let i = 0; i < csv.length; i += 4) {
+    for (let i = 0; i <= csv.length - 4; i += 4) {
       let unos = {
         ime: csv[i],
         prezime: csv[i + 1],
@@ -71,10 +74,11 @@ const studentController = (() => {
 
       obecanja.push(
         Student.findOrCreate({
-          where: unos,
-          default: unos,
+          where: { index: unos.index },
+          defaults: unos,
         }).then((student) => {
-          if (!student[1]) duplikati.push(student[0].index);
+          if (!student[1])
+            duplikati.push({ i: i / 4, index: student[0].index });
           else return napraviNovuGrupu(student[0].grupa);
           return student[0];
         })
@@ -86,10 +90,20 @@ const studentController = (() => {
         status: `Dodano ${obecanja.length - duplikati.length} studenata`,
       };
 
+      duplikati = duplikati.map((el) => JSON.stringify(el));
+
       if (duplikati.length != 0) {
         obj.status += ", a studenti ";
-        indeksi.forEach((elem) => {
-          if (duplikati.includes(elem)) obj.status += `${elem},`;
+        indeksi.forEach((elem, i) => {
+          if (
+            duplikati.includes(
+              JSON.stringify({
+                i: i,
+                index: elem,
+              })
+            )
+          )
+            obj.status += `${elem},`;
         });
         obj.status = obj.status.slice(0, -1);
         obj.status += " već postoje!";
