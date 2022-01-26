@@ -39,7 +39,7 @@ app.get("/", (req, res) => {
 app.use("/vjezbe", vjezbeRoutes);
 app.use("/", studentiRoutes);
 
-Vjezba.hasMany(Zadatak);
+Vjezba.hasMany(Zadatak, { onDelete: "cascade" });
 
 sequelize
   .sync({ forice: true })
