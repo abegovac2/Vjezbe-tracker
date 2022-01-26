@@ -1,5 +1,5 @@
-const fs = require("fs");
-const { Vjezba, Zadatak } = require("../database/modeli");
+const Vjezba = require("../models/vjezba");
+const Zadatak = require("../models/zadatak");
 
 const vjezbeController = (() => {
   const checkValidInput = (brojVjezbi, brojZadataka) => {
@@ -28,40 +28,37 @@ const vjezbeController = (() => {
 
     return { sendErr, errMess };
   };
+
   const getVjezbeData = (req, res) => {
     Vjezba.findOne({
-      order: ["id", "desc"],
+      order: [["id", "DESC"]],
     })
       .then((vjezbe, data) => {
-        Zadatak.findAll({
-          where: { vjezbaId: vjezbe[0].id },
-          order: ["id", "desc"],
-        })
-          .then((zadaci, data) => {
-            let brojZadataka = zadaci.map((x) => x.brojZadataka);
-            let obj = {
-              brojVjezbi: vjezbe[0].brojVjezbi,
-              brojZadataka: brojZadataka,
-            };
-
-            let { sendErr, errMess } = checkValidInput(
-              obj.brojVjezbi,
-              obj.brojZadataka
-            );
-
-            if (sendErr) {
-              console.log(errMess);
-              res.status(400).send(errMess);
-            } else res.send(obj);
-          })
-          .catch((err) => {});
+        if (vjezbe == null) {
+          res.status(400).send({
+            status: "error",
+            data: "Nije kreirana niti jedna vjezba!",
+          });
+          throw "Nije kreirana niti jedna vjezba!";
+        }
+        return Zadatak.findAll({
+          where: { vjezbaId: vjezbe.id },
+          order: [["id", "ASC"]],
+        });
       })
-      .catch((err) => {});
+      .then((zadaci, data) => {
+        let brojZadataka = zadaci.map((x) => x.brojZadataka);
+        let obj = {
+          brojVjezbi: brojZadataka.length,
+          brojZadataka: brojZadataka,
+        };
+        res.send(obj);
+      })
+      .catch((err) => console.log(err));
   };
 
   const postVjezbeData = (req, res) => {
     let { brojVjezbi, brojZadataka } = req.body;
-
     let { sendErr, errMess } = checkValidInput(brojVjezbi, brojZadataka);
 
     if (sendErr) res.send({ status: "error", data: errMess });
@@ -72,34 +69,22 @@ const vjezbeController = (() => {
       };
 
       Vjezba.create({
-        nazivVjezbe: "Vjezba",
+        brojVjezbi: brojVjezbi,
       })
         .then((vjezba) => {
-          let hasError = false;
-          for (let i = 0; i < brojVjezbi; ++i) {
-            Zadatak.create({
-              vjezbaId: vjezba[0].id,
-              brojZadataka: brojZadataka[i],
-            })
-              .then((zadatak) => {
-                console.log(zadatak);
-              })
-              .catch(() => {
-                res.send(errorMsg);
-                hasError = true;
-              });
-            if (hasError) return;
-          }
+          brojZadataka = brojZadataka.map((element) => {
+            return { vjezbaId: vjezba.id, brojZadataka: element };
+          });
+          return Zadatak.bulkCreate(brojZadataka, { validate: true });
         })
-        .catch(() => {
-          res.send(errorMsg);
-        });
-
-      getVjezbeData(req, res);
+        .then(() => {
+          getVjezbeData(req, res);
+        })
+        .catch(() => res.send(errorMsg));
     }
   };
 
-  return { getVjezbeData: getVjezbeData, postVjezbeData: postVjezbeData };
+  return { getVjezbeData, postVjezbeData };
 })();
 
 module.exports = vjezbeController;
