@@ -208,6 +208,69 @@ const testoviDodavanjaViseStudenta = () => {
         done();
       });
   });
+
+  it("Svi isti", function (done) {
+    chai
+      .request(server)
+      .post("/batch/student")
+      .set("content-type", "application/json")
+      .send({
+        csv: `Meho,Mehic,225883,Grupa1\nMeho,Mehic,225883,Grupa1\nMeho,Mehic,225883,Grupa1\nMeho,Mehic,225883,Grupa1\nMeho,Mehic,225883,Grupa1`,
+      })
+      .end((err, res) => {
+        assert.isNull(err);
+        assert.equal(res.status, 200);
+        assert.equal(
+          res.text,
+          '{"status":"Dodano 1 studenata, a studenti 225883,225883,225883,225883 već postoje!"}'
+        );
+        done();
+      });
+  });
+
+  it("Svi vec postoje u bazi", function (done) {
+    chai
+      .request(server)
+      .post("/batch/student")
+      .set("content-type", "application/json")
+      .send({
+        csv: `Meho,Mehic,225883,Grupa1\nMeho,Mehic,225883,Grupa1\nMeho,Mehic,225883,Grupa1\nMeho,Mehic,225883,Grupa1\nMeho,Mehic,225883,Grupa1`,
+      })
+      .end((err, res) => {
+        assert.isNull(err);
+        assert.equal(res.status, 200);
+        assert.equal(
+          res.text,
+          '{"status":"Dodano 0 studenata, a studenti 225883,225883,225883,225883,225883 već postoje!"}'
+        );
+        done();
+      });
+  });
+
+  it("Veliki broj dodavanja sa jednim duplim", function (done) {
+    let broj = 100;
+    let ulaz = "";
+    for (let i = 0; i < broj; ++i) {
+      ulaz += `Meho,Mehic,${i},Grupa1\n`;
+    }
+    ulaz += "Meho,Mehic,1,Grupa1";
+    chai
+      .request(server)
+      .post("/batch/student")
+      .set("content-type", "application/json")
+      .send({
+        csv: ulaz,
+      })
+      .end((err, res) => {
+        assert.isNull(err);
+        assert.equal(res.status, 200);
+        assert.equal(
+          res.text,
+          `{"status":"Dodano ${broj} studenata, a studenti 1 već postoje!"}`
+        );
+        done();
+      });
+  });
 };
 
 describe("Spirala 4", function () {

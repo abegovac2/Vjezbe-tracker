@@ -22,7 +22,7 @@ const Student = sequelize.define("student", {
     field: "index",
     validate: {
       is: {
-        args: [/[0-9]{3,}/g],
+        args: [/[0-9]{1,}/g],
         msg: "Index se sastoji samo od brojčanih znakova!",
       },
     },
